@@ -1066,34 +1066,37 @@ public class Utilities {
     public static List<String> listXmlFilesFromClasspath(String folderPath) {
         List<String> xmlFiles = new ArrayList<>();
         try {
+            // Try to read all resources matching the folder path
             ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
             URL dirURL = classLoader.getResource(folderPath);
 
-            if (dirURL == null) {
-                log.warn("⚠️ XML folder '{}' not found in classpath", folderPath);
-                return xmlFiles;
-            }
-
-            // ✅ Case 1: Local development (filesystem)
-            if ("file".equals(dirURL.getProtocol())) {
+            if (dirURL != null && "file".equals(dirURL.getProtocol())) {
+                // ✅ Local run: src/main/resources/xmlFiles
                 File folder = new File(dirURL.toURI());
                 File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
                 if (files != null) {
-                    for (File file : files) xmlFiles.add(file.getName());
+                    for (File f : files) xmlFiles.add(f.getName());
                 }
-            }
-            // ✅ Case 2: Running from within an exploded Spring Boot JAR (Railway)
-            else if ("jar".equals(dirURL.getProtocol()) || "jrt".equals(dirURL.getProtocol())) {
-                // Try to scan via classloader resources instead of direct JAR path
-                Enumeration<URL> resources = classLoader.getResources(folderPath);
-                while (resources.hasMoreElements()) {
-                    URL resource = resources.nextElement();
-                    try (InputStream stream = resource.openStream();
-                         BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {
-                        reader.lines()
-                                .filter(line -> line.endsWith(".xml"))
-                                .forEach(xmlFiles::add);
-                    } catch (Exception ignore) { }
+            } else {
+                // ✅ Inside Spring Boot JAR (Railway)
+                String pathInJar = "BOOT-INF/classes/" + folderPath + "/";
+                try (InputStream jarStream = Utilities.class
+                        .getProtectionDomain()
+                        .getCodeSource()
+                        .getLocation()
+                        .openStream()) {
+                    try (JarInputStream jar = new JarInputStream(jarStream)) {
+                        JarEntry entry;
+                        while ((entry = jar.getNextJarEntry()) != null) {
+                            if (entry.getName().startsWith(pathInJar)
+                                    && entry.getName().endsWith(".xml")) {
+                                xmlFiles.add(entry.getName()
+                                        .substring(entry.getName().lastIndexOf('/') + 1));
+                            }
+                        }
+                    }
+                } catch (Exception inner) {
+                    log.warn("⚠️ Could not scan inside JAR, trying alternative resource listing: {}", inner.getMessage());
                 }
             }
 
@@ -1106,7 +1109,6 @@ public class Utilities {
         } catch (Exception e) {
             log.error("❌ Failed to list XML files from '{}': {}", folderPath, e.getMessage(), e);
         }
-
         return xmlFiles;
     }
 
