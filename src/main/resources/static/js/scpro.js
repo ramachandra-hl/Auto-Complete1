@@ -233,9 +233,11 @@
     const props = collectProperties();
     const projectId = document.getElementById("projectId").value.trim();
     const env = document.getElementById("env").value.trim();
+    const custType = document.getElementById("customerType").value.trim();
 
     if (projectId) props.projectID = projectId;
     if (env) props.environment = env;
+    if (custType) props.customerType=custType
 
     const qs = new URLSearchParams(props).toString();
     const url = `${API_BASE_URL}/run?xmlFile=${selectedSuite}${qs ? "&" + qs : ""}`;

@@ -329,6 +329,7 @@ public class TestController {
         defaults.put("environment", "local");
         defaults.put("projectID", "");
         defaults.put("modulesInRoom", "10");
+        defaults.put("customerType", "HL");
 
         if (queryParams != null) {
             queryParams.forEach((key, value) -> {
