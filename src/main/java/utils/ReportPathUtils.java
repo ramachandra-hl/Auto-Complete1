@@ -12,7 +12,7 @@ public class ReportPathUtils {
     private static final String LOCAL_BASE_FOLDER =
             System.getProperty("user.home") + "/Documents/AutoQA-Complete";
     private static final String CLOUD_BASE_FOLDER =
-            System.getProperty("user.home") + "/AutoQA-Complete/input";
+            System.getProperty("user.home") + "/";
 
     /**
      * Determines the root base path depending on environment.
