@@ -1074,31 +1074,34 @@ public class Utilities {
                 return xmlFiles;
             }
 
+            // ✅ Case 1: Local development (filesystem)
             if ("file".equals(dirURL.getProtocol())) {
-                // Local development mode
                 File folder = new File(dirURL.toURI());
                 File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
                 if (files != null) {
                     for (File file : files) xmlFiles.add(file.getName());
                 }
-            } else if ("jar".equals(dirURL.getProtocol())) {
-                // Running inside a JAR (Railway, Production)
-                String jarPath = dirURL.getPath().substring(5, dirURL.getPath().indexOf("!"));
-                try (JarInputStream jarStream = new JarInputStream(new FileInputStream(jarPath))) {
-                    JarEntry entry;
-                    while ((entry = jarStream.getNextJarEntry()) != null) {
-                        String name = entry.getName();
-                        if (name.startsWith(folderPath + "/") && name.endsWith(".xml")) {
-                            xmlFiles.add(name.substring(name.lastIndexOf("/") + 1));
-                        }
-                    }
+            }
+            // ✅ Case 2: Running from within an exploded Spring Boot JAR (Railway)
+            else if ("jar".equals(dirURL.getProtocol()) || "jrt".equals(dirURL.getProtocol())) {
+                // Try to scan via classloader resources instead of direct JAR path
+                Enumeration<URL> resources = classLoader.getResources(folderPath);
+                while (resources.hasMoreElements()) {
+                    URL resource = resources.nextElement();
+                    try (InputStream stream = resource.openStream();
+                         BufferedReader reader = new BufferedReader(new InputStreamReader(stream))) {
+                        reader.lines()
+                                .filter(line -> line.endsWith(".xml"))
+                                .forEach(xmlFiles::add);
+                    } catch (Exception ignore) { }
                 }
             }
 
-            if (xmlFiles.isEmpty())
+            if (xmlFiles.isEmpty()) {
                 log.warn("⚠️ No XML files found in classpath folder '{}'", folderPath);
-            else
+            } else {
                 log.info("✅ Found {} XML files in '{}': {}", xmlFiles.size(), folderPath, xmlFiles);
+            }
 
         } catch (Exception e) {
             log.error("❌ Failed to list XML files from '{}': {}", folderPath, e.getMessage(), e);
@@ -1106,6 +1109,7 @@ public class Utilities {
 
         return xmlFiles;
     }
+
 
     public static File getXmlResource(String xmlFileName) {
         String resourcePath = "xmlFiles/" + xmlFileName;
