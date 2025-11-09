@@ -233,27 +233,6 @@
             </configuration>
         </plugin>
 
-        <!-- ✅ TestNG Runner -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version>
-            <configuration>
-                <argLine>-Dfile.encoding=UTF-8</argLine>
-                
-                <systemPropertyVariables>
-                    <filename>${filename}</filename>
-                    <userConfigPath>${userConfigPath}</userConfigPath>
-                    <inputFilePath>${inputFilePath}</inputFilePath>
-                </systemPropertyVariables>
-
-                <!-- ✅ Pick XML from custom folder -->
-                <suiteXmlFiles>
-                    <suiteXmlFile>testng-suites/${filename}</suiteXmlFile>
-                </suiteXmlFiles>
-
-            </configuration>
-        </plugin>
 
     </plugins>
 </build>

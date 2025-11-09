@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Roster Lead Creation</title>
+</head>
+<body>
+<div id="contentContainer">
+<div class="container">
+    <h1>SPACECRAFT FLOW</h1>
+
+    <div class="">
+        <!-- XML Suites -->
+        <label>XML Suite</label>
+        <select id="suite">
+            <option value="">-- Select Suite --</option>
+        </select>
+
+        <!-- User Properties -->
+        <label>User Properties</label>
+        <div id="user-properties">
+            <input type="text" id="projectId" placeholder="Enter Project ID" />
+            <label>Environment</label>
+            <select id="env">
+                <option value="">Select Environment</option>
+                <option value="preProd">preProd</option>
+                <option value="prod">prod</option>
+            </select>
+        </div>
+        <div class="buttons">
+        <button id="add-property" class="btn-small">➕ Add Property</button>
+        </div>
+
+        <!-- CSV Upload -->
+        <div>
+        <label>Upload CSV File</label>
+        <input type="file" id="csv-file" accept=".csv" />
+        </div>
+        <div id="csv-preview">
+            <p>No CSV file selected</p>
+        </div>
+    </div>
+
+    <div class="buttons" id="buttonContainer">
+        <button class="run-btn" id="runBtn">Run</button>
+        <button class="clear-btn" id="clearBtn">Clear Log</button>
+    </div>
+
+    <div id="responseContainer" class="response-box"></div>
+</div>
+    </div>
+
+<!-- Popup Modal -->
+<div id="popup-modal">
+    <div class="popup-content">
+        <h3>📋 Required CSV Fields</h3>
+        <ul id="required-fields-list"></ul>
+        <button id="close-popup">OK, Continue</button>
+    </div>
+</div>
+</body>
+</html>
