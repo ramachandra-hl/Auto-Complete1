@@ -87,7 +87,7 @@ public class TestController {
     @GetMapping("/test/suites")
     public ResponseEntity<List<String>> getAllXmlFiles() {
         try {
-            List<String> xmlFiles = Utilities.loadXmlFileNamesFromClasspath("xmlFiles");
+            List<String> xmlFiles = Utilities.listXmlFilesFromClasspath("xmlFiles");
             if (xmlFiles.isEmpty()) {
                 return ResponseEntity.ok(List.of("No XML files found in classpath"));
             }
@@ -346,33 +346,7 @@ public class TestController {
     // ✅ Resolve XML Suite File (Classpath / FileSystem)
     // ==========================================================
     private File resolveXmlFile(String xmlFile) throws IOException {
-        // 1️⃣ Try reading from filesystem (local dev)
-        Path localPath = Paths.get(xmlFolder, xmlFile);
-        if (Files.exists(localPath)) {
-            System.out.println("📂 Using local XML file: " + localPath.toAbsolutePath());
-            return localPath.toFile();
-        }
-
-        // 2️⃣ Try loading from classpath using your existing Utilities method
-        try (InputStream inputStream = Utilities.openClasspathStream("xmlFiles/" + xmlFile)) {
-            if (inputStream == null) {
-                System.err.println("❌ XML file not found in classpath: xmlFiles/" + xmlFile);
-                return null;
-            }
-
-            // Create a temp file so TestNG can read it
-            File tempFile = File.createTempFile("suite-", ".xml");
-            try (OutputStream out = new FileOutputStream(tempFile)) {
-                inputStream.transferTo(out);
-            }
-
-            System.out.println("✅ Loaded XML from classpath into temp file: " + tempFile.getAbsolutePath());
-            return tempFile;
-        } catch (Exception e) {
-            System.err.println("❌ Failed to resolve XML file '" + xmlFile + "': " + e.getMessage());
-            e.printStackTrace();
-            return null;
-        }
+     return  Utilities.getXmlResource(xmlFile);
     }
 
 }

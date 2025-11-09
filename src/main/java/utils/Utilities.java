@@ -24,6 +24,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.jar.JarEntry;
+import java.util.jar.JarInputStream;
 
 
 import static io.restassured.RestAssured.given;
@@ -1061,52 +1063,79 @@ public class Utilities {
     }
 
 
-    public static List<String> loadXmlFileNamesFromClasspath(String folderPath) {
+    public static List<String> listXmlFilesFromClasspath(String folderPath) {
         List<String> xmlFiles = new ArrayList<>();
         try {
             ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-            URL folderUrl = classLoader.getResource(folderPath);
+            URL dirURL = classLoader.getResource(folderPath);
 
-            if (folderUrl == null) {
+            if (dirURL == null) {
                 log.warn("⚠️ XML folder '{}' not found in classpath", folderPath);
                 return xmlFiles;
             }
 
-            // Works for exploded classes (local) and JAR deployment
-            if (folderUrl.getProtocol().equals("file")) {
-                File folder = new File(folderUrl.getFile());
-                if (folder.exists() && folder.isDirectory()) {
-                    File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
-                    if (files != null) {
-                        for (File file : files) {
-                            xmlFiles.add(file.getName());
-                        }
-                    }
+            if ("file".equals(dirURL.getProtocol())) {
+                // Local development mode
+                File folder = new File(dirURL.toURI());
+                File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
+                if (files != null) {
+                    for (File file : files) xmlFiles.add(file.getName());
                 }
-            } else if (folderUrl.getProtocol().equals("jar")) {
-                String jarPath = folderUrl.getPath().substring(5, folderUrl.getPath().indexOf("!"));
-                try (java.util.jar.JarFile jarFile = new java.util.jar.JarFile(jarPath)) {
-                    java.util.Enumeration<java.util.jar.JarEntry> entries = jarFile.entries();
-                    while (entries.hasMoreElements()) {
-                        java.util.jar.JarEntry entry = entries.nextElement();
-                        if (entry.getName().startsWith(folderPath + "/") && entry.getName().endsWith(".xml")) {
-                            xmlFiles.add(entry.getName().substring(entry.getName().lastIndexOf("/") + 1));
+            } else if ("jar".equals(dirURL.getProtocol())) {
+                // Running inside a JAR (Railway, Production)
+                String jarPath = dirURL.getPath().substring(5, dirURL.getPath().indexOf("!"));
+                try (JarInputStream jarStream = new JarInputStream(new FileInputStream(jarPath))) {
+                    JarEntry entry;
+                    while ((entry = jarStream.getNextJarEntry()) != null) {
+                        String name = entry.getName();
+                        if (name.startsWith(folderPath + "/") && name.endsWith(".xml")) {
+                            xmlFiles.add(name.substring(name.lastIndexOf("/") + 1));
                         }
                     }
                 }
             }
 
-            if (xmlFiles.isEmpty()) {
+            if (xmlFiles.isEmpty())
                 log.warn("⚠️ No XML files found in classpath folder '{}'", folderPath);
-            } else {
-                log.info("✅ Found {} XML files in classpath folder '{}': {}", xmlFiles.size(), folderPath, xmlFiles);
-            }
+            else
+                log.info("✅ Found {} XML files in '{}': {}", xmlFiles.size(), folderPath, xmlFiles);
 
         } catch (Exception e) {
-            log.error("❌ Failed to read XML files from '{}': {}", folderPath, e.getMessage(), e);
+            log.error("❌ Failed to list XML files from '{}': {}", folderPath, e.getMessage(), e);
         }
 
         return xmlFiles;
+    }
+
+    public static File getXmlResource(String xmlFileName) {
+        String resourcePath = "xmlFiles/" + xmlFileName;
+        try {
+            // 1️⃣ Try loading via classpath stream
+            try (InputStream in = openClasspathStream(resourcePath)) {
+                if (in != null) {
+                    File tempFile = File.createTempFile("suite-", ".xml");
+                    try (OutputStream out = new FileOutputStream(tempFile)) {
+                        in.transferTo(out);
+                    }
+                    log.info("✅ Loaded XML '{}' from classpath into temp file: {}", xmlFileName, tempFile.getAbsolutePath());
+                    return tempFile;
+                }
+            }
+
+            // 2️⃣ Fallback to local path (during local runs)
+            Path localPath = Paths.get("src/main/resources/xmlFiles", xmlFileName);
+            if (Files.exists(localPath)) {
+                log.info("📂 Using local XML file: {}", localPath.toAbsolutePath());
+                return localPath.toFile();
+            }
+
+            log.warn("⚠️ XML resource '{}' not found in classpath or filesystem", resourcePath);
+            return null;
+
+        } catch (Exception e) {
+            log.error("❌ Failed to resolve XML resource '{}': {}", xmlFileName, e.getMessage(), e);
+            return null;
+        }
     }
 
 
