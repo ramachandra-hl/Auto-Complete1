@@ -16,6 +16,7 @@ import org.json.simple.parser.ParseException;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.*;
+import java.net.URL;
 import java.nio.file.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -984,7 +985,7 @@ public class Utilities {
     }
 
 
-    private static InputStream openClasspathStream(String fileName) {
+    public static InputStream openClasspathStream(String fileName) {
         String cpName = fileName.startsWith("/") ? fileName.substring(1) : fileName;
         InputStream is = Utilities.class.getClassLoader().getResourceAsStream(cpName);
         if (is == null) {
@@ -1058,6 +1059,56 @@ public class Utilities {
             return false;
         }
     }
+
+
+    public static List<String> loadXmlFileNamesFromClasspath(String folderPath) {
+        List<String> xmlFiles = new ArrayList<>();
+        try {
+            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+            URL folderUrl = classLoader.getResource(folderPath);
+
+            if (folderUrl == null) {
+                log.warn("⚠️ XML folder '{}' not found in classpath", folderPath);
+                return xmlFiles;
+            }
+
+            // Works for exploded classes (local) and JAR deployment
+            if (folderUrl.getProtocol().equals("file")) {
+                File folder = new File(folderUrl.getFile());
+                if (folder.exists() && folder.isDirectory()) {
+                    File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
+                    if (files != null) {
+                        for (File file : files) {
+                            xmlFiles.add(file.getName());
+                        }
+                    }
+                }
+            } else if (folderUrl.getProtocol().equals("jar")) {
+                String jarPath = folderUrl.getPath().substring(5, folderUrl.getPath().indexOf("!"));
+                try (java.util.jar.JarFile jarFile = new java.util.jar.JarFile(jarPath)) {
+                    java.util.Enumeration<java.util.jar.JarEntry> entries = jarFile.entries();
+                    while (entries.hasMoreElements()) {
+                        java.util.jar.JarEntry entry = entries.nextElement();
+                        if (entry.getName().startsWith(folderPath + "/") && entry.getName().endsWith(".xml")) {
+                            xmlFiles.add(entry.getName().substring(entry.getName().lastIndexOf("/") + 1));
+                        }
+                    }
+                }
+            }
+
+            if (xmlFiles.isEmpty()) {
+                log.warn("⚠️ No XML files found in classpath folder '{}'", folderPath);
+            } else {
+                log.info("✅ Found {} XML files in classpath folder '{}': {}", xmlFiles.size(), folderPath, xmlFiles);
+            }
+
+        } catch (Exception e) {
+            log.error("❌ Failed to read XML files from '{}': {}", folderPath, e.getMessage(), e);
+        }
+
+        return xmlFiles;
+    }
+
 
 
 
