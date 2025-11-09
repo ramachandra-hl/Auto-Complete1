@@ -1,24 +1,26 @@
+
 package utils;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Date;
 
 public class ReportPathUtils {
 
     // 💻 Local and Cloud Fallbacks (same as your config setup)
-    private static final String LOCAL_BASE_FOLDER = System.getProperty("user.home") + "/Downloads/AutoQA-Complete1";
-    private static final String CLOUD_BASE_FOLDER = System.getProperty("user.home") + "/AutoQA-Complete1/reports";
+    private static final String LOCAL_BASE_FOLDER =
+            System.getProperty("user.home") + "/Documents/AutoQA-Complete";
+    private static final String CLOUD_BASE_FOLDER =
+            System.getProperty("user.home") + "/AutoQA-Complete/input";
 
-
-
+    /**
+     * Determines the root base path depending on environment.
+     */
     public static Path getBaseStoragePath() {
         String envBase = System.getenv("CONFIG_BASE_DIR");
 
-        if (envBase != null && !envBase.isEmpty()) {
+        if (envBase != null && !envBase.isBlank()) {
             Path envPath = Paths.get(envBase);
             ensureDir(envPath);
             System.out.println("☁️ Using CONFIG_BASE_DIR: " + envPath.toAbsolutePath());
@@ -37,17 +39,31 @@ public class ReportPathUtils {
         return cloudPath;
     }
 
-
-
+    /**
+     * Returns the directory path for report storage.
+     * Automatically avoids double "reports/reports" nesting.
+     */
     public static Path getReportDir(String reportType, String environment) {
         Path base = getBaseStoragePath();
         String dateFolder = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
-        Path reportDir = base.resolve(Paths.get("reports", reportType, environment, dateFolder));
+
+        // 🧠 Check if base already contains "reports"
+        Path reportDir;
+        if (base.toString().endsWith("reports")) {
+            reportDir = base.resolve(Paths.get(reportType, environment, dateFolder));
+        } else {
+            reportDir = base.resolve(Paths.get("reports", reportType, environment, dateFolder));
+        }
+
         ensureDir(reportDir);
         return reportDir;
     }
 
-    public static Path getTimestampedReportFile(String reportType, String environment, String filePrefix, String extension) {
+    /**
+     * Builds a timestamped report file path.
+     */
+    public static Path getTimestampedReportFile(String reportType, String environment,
+                                                String filePrefix, String extension) {
         Path dir = getReportDir(reportType, environment);
         String timeStamp = new SimpleDateFormat("hh.mm.a").format(new Date());
         String fileName = filePrefix + "_" + timeStamp + extension;
@@ -55,7 +71,7 @@ public class ReportPathUtils {
     }
 
     /**
-     * Ensure directory exists, creates if missing.
+     * Ensures a directory exists, creating it if necessary.
      */
     private static void ensureDir(Path path) {
         try {
@@ -68,4 +84,3 @@ public class ReportPathUtils {
         }
     }
 }
-
