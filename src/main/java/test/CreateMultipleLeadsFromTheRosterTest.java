@@ -293,7 +293,7 @@ public class CreateMultipleLeadsFromTheRosterTest extends BaseClass {
                 && "True".equalsIgnoreCase(isUserConfigPassed)) {
             updateProperties(userConfigPath, updateUserProperty);
         }
-        updateProperties("configuration/userConfigurations.properties", updateUserProperty);
+        updateProperties("configquration/userConfigurations.properties", updateUserProperty);
 
         String finalFileName = leadCount + "_" + customerType + "-Leads_LastAt_" + currentIndex + formatCurrentDate(" ⏰ hh.mm.a") + ".csv";
         utilities.renamingLeadReportFile(filepath, finalFileName);
