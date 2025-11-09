@@ -1,0 +1,13 @@
+s.no,moduleId,moduleName,errorMessage
+16,14280,T1OP&1DR2S2ALU-DC,"For Drawer Facia handle is required"
+17,14281,T1OP&1DR2S2ALU-QD-DC,"For Drawer Facia handle is required"
+18,14282,T2DR1ALU-DC,"For 1st Drawer Facia handle is required"
+19,14283,T2ALU-DC,"ALUMINIUM Shutter Left required a glass details"
+20,14284,T2S&2ALU-DC,"For Plain shutter Left handle is required"
+5,14269,B3S&2DR-DC,"For 1st Drawer Facia handle is required"
+6,14270,T2S&1S1OP-DC,"For Plain Shutter Left handle is required"
+7,14271,T2S&1S1OP-QD-DC,"For Plain Shutter Left handle is required"
+9,14273,W1OP2S-DC,"For Plain shutter Left handle is required"
+10,14274,W1OP2S1FS-DC,"For Plain shutter Left handle is required"
+11,14275,W2OP2S-DC,"For Plain shutter Left handle is required"
+4,14268,B2S&2FS1OP-DC,"Error in zone : 3_4_14268_B2S&2FS1OP-DC for module [Shoe Base 2 Shutter and 2 Fixed Shelf with 1 Open Space Module,14268] : Insufficient accessories. Minimum required: 3 got 0"

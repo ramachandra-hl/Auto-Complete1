@@ -1,0 +1,19 @@
+s.no,Room Type,Room Name,Furniture Type,categoryName,CategoryID,subCategoryName,SubCategoryID,ModuleId,Modulename,width,depth,height,AliasName
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,10192,HW-1S,600,560,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,11288,HWSS-1S,510,300,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,10197,HW-2S,1200,560,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,10629,HWFS-SM-2S,1200,620,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,10630,HWSPWFS-SM-2S,1200,620,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,10207,HWLC-2S,1050,560,2250,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,11422,HWF&S-2S,1200,100,2250,
+
+
+
+s.no,Room Type,Room Name,modulename,ModuleId
+1,LivingRoom,LivingRoom,VS3-HW1FV-2S-S,11666
+1,LivingRoom,LivingRoom,VS1-HW-1S-S,11692
+1,LivingRoom,LivingRoom,VS2-HW-2S-S,11693
+1,LivingRoom,LivingRoom,VS4-HW1HV-2S-S,11694
+1,LivingRoom,LivingRoom,FHW-3S-Left-S,12710
+1,LivingRoom,LivingRoom,SMBP-W-S,11618
+1,LivingRoom,LivingRoom,FHW-3S-Right-S,12711

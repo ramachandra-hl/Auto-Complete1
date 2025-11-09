@@ -1,0 +1,62 @@
+{
+  "modules": [
+    {
+      "moduleObjectId": "4d2e28d9-56fb-401f-8a72-7f72a5ff00b9-0",
+      "shutterCategory": null,
+      "multipartShutters": {
+        "LEFT": {
+          "shutterObjectId": "c0baaa83-10ac-4b81-bb46-19c32e8e4cf6",
+          "frameName": "Aluminium Profile With Lipping With Handle AlPro",
+          "frameCode": "10017-10047",
+          "frameColorName": "Silver",
+          "frameColorCode": "10301",
+          "frameColourImage": "https://d2sy33g84bb5i8.cloudfront.net/materials/9af39478-ddd7-45fb-80a8-0c0feed1dff4",
+          "frameMaterialId": "224f53ac-19c9-45df-af96-9683f2a7010a",
+          "panels": [
+            {
+              "panelId": 12245,
+              "coreCode": null,
+              "coreName": null,
+              "finishCode": null,
+              "finishName": null,
+              "colourCode": null,
+              "colourName": null,
+              "colourImage": null,
+              "materialId": null,
+              "glassMaterialName": "Lacquered Glass",
+              "glassColorCode": "10245",
+              "glassColorName": "SG-Yellow_4mm",
+              "glassMaterialId": "869b54d1-d8b8-44f9-8316-192a2ff76c0f"
+            }
+          ]
+        },
+        "RIGHT": {
+          "shutterObjectId": "f1c7c35b-b467-4168-a06b-4983fbb41db7",
+          "frameName": "Aluminium Profile With Lipping With Handle AlPro",
+          "frameCode": "10017-10047",
+          "frameColorName": "Silver",
+          "frameColorCode": "10301",
+          "frameColourImage": "https://d2sy33g84bb5i8.cloudfront.net/materials/9af39478-ddd7-45fb-80a8-0c0feed1dff4",
+          "frameMaterialId": "224f53ac-19c9-45df-af96-9683f2a7010a",
+          "panels": [
+            {
+              "panelId": 12250,
+              "coreCode": null,
+              "coreName": null,
+              "finishCode": null,
+              "finishName": null,
+              "colourCode": null,
+              "colourName": null,
+              "colourImage": null,
+              "materialId": null,
+              "glassMaterialName": "Lacquered Glass",
+              "glassColorCode": "10245",
+              "glassColorName": "SG-Yellow_4mm",
+              "glassMaterialId": "869b54d1-d8b8-44f9-8316-192a2ff76c0f"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

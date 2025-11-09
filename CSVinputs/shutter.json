@@ -1,0 +1,786 @@
+[
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10239",
+    "shutterFinishName": "Laminate-DC Nova Woodgrain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10240",
+    "shutterFinishName": "Laminate-DC Nova Textures",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10241",
+    "shutterFinishName": "Laminate-DC Nova MR +",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10242",
+    "shutterFinishName": "Laminate-DC Nova Solids",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10243",
+    "shutterFinishName": "Laminate-DC Abetti Woodgrain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10244",
+    "shutterFinishName": "Laminate-DC Abetti Texture",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10245",
+    "shutterFinishName": "Laminate-DC Abetti Solids",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10246",
+    "shutterFinishName": "Laminate-DC Abetti Rustic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10247",
+    "shutterFinishName": "Laminate-DC Abetti Stone",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10248",
+    "shutterFinishName": "Laminate-DC Abetti Metallic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10249",
+    "shutterFinishName": "Laminate-DC Abetti Geometric",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10250",
+    "shutterFinishName": "Laminate-DC Abetti Concrete",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10251",
+    "shutterFinishName": "Laminate-DC Abetti Digital",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10281",
+    "shutterFinishName": "Laminate-DC Nova Naturals",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10282",
+    "shutterFinishName": "Laminate-DC Nova Abstract",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10283",
+    "shutterFinishName": "Laminate-DC Nova Select Prints",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova Select",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10284",
+    "shutterFinishName": "Laminate-DC Nova Select Decor Solids",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Nova Select",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10285",
+    "shutterFinishName": "Laminate-DC Abetti Naturals",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10286",
+    "shutterFinishName": "Laminate-DC Abetti Figured Wood",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Abetti",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10287",
+    "shutterFinishName": "Laminate-DC Signature Solids",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10066-10288",
+    "shutterFinishName": "Laminate-DC Signature Impasto",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10068-10268",
+    "shutterFinishName": "Acrylic-DC Premium Acrylic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10071-10271",
+    "shutterFinishName": "Membrane-DC Premium Standard",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Membrane Inline",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10071-10272",
+    "shutterFinishName": "Membrane-DC Premium European Designer",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Membrane Inline",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10071-10273",
+    "shutterFinishName": "Membrane-DC Premium Premium European Designer",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Membrane Inline",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10071-10274",
+    "shutterFinishName": "Membrane-DC Premium German High Gloss",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Membrane Inline",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic Beeding",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Criss Cross Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plus Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Wooden Frame Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic Beeding",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Criss Cross Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plus Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Wooden Frame Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10275",
+    "shutterFinishName": "PU-DC Signature PU Matte Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10276",
+    "shutterFinishName": "PU-DC Signature PU Matte Classic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10276",
+    "shutterFinishName": "PU-DC Signature PU Matte Classic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic Beeding",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Criss Cross Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plus Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Wooden Frame Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic Beeding",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Criss Cross Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plus Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Wooden Frame Pattern",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10278",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Plain",
+    "shutterCategory": "WOODEN_FRAME",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10279",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Classic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Classic",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "10379",
+    "shutterCoreName": "HYDMR 16mm",
+    "shutterFinishCode": "10072-10279",
+    "shutterFinishName": "PU-DC Signature PU High Gloss Classic",
+    "shutterCategory": "WOODEN",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Plain",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10074-10293",
+    "shutterFinishName": "Aluminium Profile With Handle-DC Rimless Profile CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Alu Design-CNR1",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10076-10296",
+    "shutterFinishName": "Aluminium Profile With Lipping With Handle Alu Profile 3 CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Alu Design",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10076-10296",
+    "shutterFinishName": "Aluminium Profile With Lipping With Handle Alu Profile 3 CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Alu Design-CNR3",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10076-10297",
+    "shutterFinishName": "Aluminium Profile With Lipping With Handle Alu Profile 4 CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Alu Design",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10076-10297",
+    "shutterFinishName": "Aluminium Profile With Lipping With Handle Alu Profile 4 CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Alu Design-CNR4",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Premium",
+    "__typename": "Shutter"
+  },
+  {
+    "shutterCoreCode": "0",
+    "shutterCoreName": " ",
+    "shutterFinishCode": "10081-10314",
+    "shutterFinishName": "Aluminium Profile With Handle-S-DC Rimless Profile CNR",
+    "shutterCategory": "ALUMINIUM",
+    "orderProfileTypes": [
+      "DC"
+    ],
+    "shutterDesignType": "Signature Inline",
+    "shutterFinishType": "",
+    "shutterFinishCategory": "Signature",
+    "__typename": "Shutter"
+  }
+]

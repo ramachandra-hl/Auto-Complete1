@@ -1,0 +1,9 @@
+s.no,Room Type,Room Name,Furniture Type,categoryName,CategoryID,subCategoryName,SubCategoryID,Modulename,ModuleId,width,depth,height,AliasName,CarcassCode,CarcassName,CarcassColourCode,ShutterCoreCode,ShutterFinishCode,ShutterCategory,ShutterColourCode,ShutterSide,ShutterCoreCode1,ShutterFinishCode1,ShutterCategory1,ShutterColourCode1,ShutterSide1,internalId,section,accessoryCode
+1,Kitchen,Kitchen,Fitted Furniture,Kitchen,10001,Floor Standing,10011,OB-WB,10033,600,560,700,STORAGE1731425636436,,,,,,,,,,,,,,,,10480
+2,Kitchen,Kitchen,Fitted Furniture,Kitchen,10001,Floor Standing,10011,OB,10034,600,560,700,STORAGE1731431736969,,,,,,,,,,,,,,,,
+3,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Versa Hinge Wardrobe,10077,versa,10630,1000,560,2100,DEFAULT1731511456682,,,,,,,,,,,,,,,,,
+7,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,Versa Flex Composite Shell 4,12675,1900,490,2650,STORAGE1731431736969,,,,,,,,,,,,,,,,,
+8,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Versa Floor-to-Ceiling,10100,Versa Floor,12650,1000,490,2100,STORAGE1731431736969,,,,,,,,,,,,,,,,,
+9,Kitchen,Kitchen,Fitted Furniture,Loft,10006,Box Loft,10013,kk,10570,,,,DEFAULT1732592787507,10002,Prelam BWR,10004,,,,,,,,,,,,,
+10,DeckoLivingRoom,DeckoLivingRoom,Fitted Furniture,Wardrobe,10003,Decko Hinged,10083,oo,11328,,,,,,,,,,,,,,,,,,,,
+10,DeckoLivingRoom,DeckoLivingRoom,Fitted Furniture,Wardrobe,10003,Decko Hinged,10083,oo,11328,,,,,,,,,,,,,,,,,,,,

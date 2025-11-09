@@ -1,0 +1,14 @@
+{
+  "user_id": "USER12345",
+  "type": "Cash",
+  "update_data": {
+    "payment_id": "121",
+    "bank_name": "HDFC Bank",
+    "amount": 25000,
+    "gateway_txn_id": "TXN0987654321",
+    "receipt_date": "2025-04-11",
+    "offline_bank_name": "HDFC Bank",
+    "service_type": 1,
+    "payment_type": "offline"
+  }
+}

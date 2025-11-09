@@ -1,0 +1,38 @@
+{
+  "modules": [
+    {
+      "moduleObjectId": "5a514667-2f4e-49a6-801e-4d4689c91d2d-0",
+      "shutterCategory": "WOODEN",
+      "updateGroupPanels": true,
+      "shutterMaterials": [
+        {
+          "shutterObjectId": "74de256a-05a9-4f40-a9bd-4986896adf51",
+          "coreCode": "10379",
+          "coreName": "HYDMR 16mm",
+          "finishCode": "10066-10239",
+          "finishName": "Laminate-DC Nova Woodgrain",
+          "colourCode": "12727",
+          "colourName": "Dark Natural Oak SF",
+          "colourImage": "https://d2sy33g84bb5i8.cloudfront.net/textures/f33331ff-0dfd-4e8e-b4c5-f2d2af1e0bc5.jpg",
+          "materialId": "58811f4c-2a57-402c-8979-4ac084ffde78",
+          "glassAnnotation": null,
+          "glassColorCode": null,
+          "glassColorName": null,
+          "glassColourImage": null,
+          "glassMaterialId": null,
+          "glassMaterialName": null,
+          "mirrorData": null,
+          "designCode": 10001,
+          "designName": "4SEB",
+          "subDesignId": 10003,
+          "subDesignName": "Plain Design",
+          "ignoreSubDesignErrorCheck": false,
+          "designType": "Plain",
+          "finishType": "",
+          "finishCategory": "Nova",
+          "finishGroup": "Natural Wood"
+        }
+      ]
+    }
+  ]
+}

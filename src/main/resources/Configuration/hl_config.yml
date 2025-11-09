@@ -1,0 +1,13 @@
+login_Credential :
+  preProd :
+    logged_in_user_id : "2064667"
+    dp_email : "testdpcutover1@homelane.com"
+    dp_password : "123456"
+    finance_email : "test_finance@homelane.com"
+    finance_password : "VE{7HrV],'adz:!N"
+  prod :
+    logged_in_user_id : "631342"
+    dp_email : "testopsprod@homelane.com"
+    dp_password: "#<{Map!md5HcbDdU"
+
+#      testorgstructuredp1@homelane.com testopsprod@homelane.com

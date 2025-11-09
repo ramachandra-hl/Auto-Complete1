@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-09T15:19:16 IST" name="Sample Test Suite" finished-at="2025-11-09T15:20:18 IST" duration-ms="62180">
+    <groups>
+    </groups>
+    <test started-at="2025-11-09T15:19:16 IST" name="Modules addition and Fetching Price And Error Report" finished-at="2025-11-09T15:20:18 IST" duration-ms="62180">
+      <class name="test.DefaultModulePriceAndErrorReportTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:19:31 IST" name="beforeMethod" finished-at="2025-11-09T15:19:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.computeLatestAndUpdateToLatestProjectPriceTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="computeLatestAndUpdateToLatestProjectPriceTest()[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:19:31 IST" name="computeLatestAndUpdateToLatestProjectPriceTest" finished-at="2025-11-09T15:20:14 IST" duration-ms="43281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- computeLatestAndUpdateToLatestProjectPriceTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:14 IST" name="afterMethod" finished-at="2025-11-09T15:20:14 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=computeLatestAndUpdateToLatestProjectPriceTest status=SUCCESS method=DefaultModulePriceAndErrorReportTest.computeLatestAndUpdateToLatestProjectPriceTest()[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.computeLatestAndUpdateToLatestProjectPriceTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:14 IST" name="beforeMethod" finished-at="2025-11-09T15:20:14 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.extractAllModulePriceFromProject() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="extractAllModulePriceFromProject()[pri:1, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:14 IST" name="extractAllModulePriceFromProject" finished-at="2025-11-09T15:20:16 IST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractAllModulePriceFromProject -->
+        <test-method signature="extractAllPricingErrorsFromProject()[pri:2, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:16 IST" name="extractAllPricingErrorsFromProject" finished-at="2025-11-09T15:20:18 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractAllPricingErrorsFromProject -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:16 IST" name="beforeMethod" finished-at="2025-11-09T15:20:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.extractAllPricingErrorsFromProject() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:16 IST" name="afterMethod" finished-at="2025-11-09T15:20:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=extractAllModulePriceFromProject status=SUCCESS method=DefaultModulePriceAndErrorReportTest.extractAllModulePriceFromProject()[pri:1, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.extractAllModulePriceFromProject() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4]" started-at="2025-11-09T15:20:18 IST" name="afterMethod" finished-at="2025-11-09T15:20:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=extractAllPricingErrorsFromProject status=SUCCESS method=DefaultModulePriceAndErrorReportTest.extractAllPricingErrorsFromProject()[pri:2, instance:test.DefaultModulePriceAndErrorReportTest@7039f6e4] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DefaultModulePriceAndErrorReportTest.extractAllPricingErrorsFromProject() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.DefaultModulePriceAndErrorReportTest -->
+      <class name="test.RoomConfigurationWithModuleAdditionTest">
+        <test-method signature="configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:17 IST" name="configureRoomWithModulesAndMaterials" data-provider="MiscModuleDataProvider" finished-at="2025-11-09T15:19:20 IST" duration-ms="3171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{s.no=1, internalName=HW2FS4RS1HR-1S-DC, internalId=15481, width=600, depth=580, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureRoomWithModulesAndMaterials -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:17 IST" name="beforeMethod" finished-at="2025-11-09T15:19:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:20 IST" name="afterMethod" finished-at="2025-11-09T15:19:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configureRoomWithModulesAndMaterials status=SUCCESS method=RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:20 IST" name="beforeMethod" finished-at="2025-11-09T15:19:20 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:20 IST" name="configureRoomWithModulesAndMaterials" data-provider="MiscModuleDataProvider" finished-at="2025-11-09T15:19:23 IST" duration-ms="2632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{s.no=2, internalName=HW1ID2FS3RS-1S-DC, internalId=15490, width=600, depth=580, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureRoomWithModulesAndMaterials -->
+        <test-method signature="configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:23 IST" name="configureRoomWithModulesAndMaterials" data-provider="MiscModuleDataProvider" finished-at="2025-11-09T15:19:25 IST" duration-ms="2648" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{s.no=3, internalName=HW1ID2FS3RS-1S-400D-DC, internalId=15491, width=600, depth=570, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureRoomWithModulesAndMaterials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:23 IST" name="afterMethod" finished-at="2025-11-09T15:19:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configureRoomWithModulesAndMaterials status=SUCCESS method=RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:23 IST" name="beforeMethod" finished-at="2025-11-09T15:19:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:25 IST" name="beforeMethod" finished-at="2025-11-09T15:19:25 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:25 IST" name="afterMethod" finished-at="2025-11-09T15:19:25 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configureRoomWithModulesAndMaterials status=SUCCESS method=RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:25 IST" name="configureRoomWithModulesAndMaterials" data-provider="MiscModuleDataProvider" finished-at="2025-11-09T15:19:28 IST" duration-ms="2460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{s.no=4, internalName=HW1ID2FS3RS-1S-350D-DC, internalId=15492, width=600, depth=520, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureRoomWithModulesAndMaterials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:28 IST" name="afterMethod" finished-at="2025-11-09T15:19:28 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configureRoomWithModulesAndMaterials status=SUCCESS method=RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:28 IST" name="configureRoomWithModulesAndMaterials" data-provider="MiscModuleDataProvider" finished-at="2025-11-09T15:19:31 IST" duration-ms="2967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{s.no=5, internalName=HW1ID2FS3RS-1S-300D-DC, internalId=15493, width=600, depth=470, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureRoomWithModulesAndMaterials -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:28 IST" name="beforeMethod" finished-at="2025-11-09T15:19:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424]" started-at="2025-11-09T15:19:31 IST" name="afterMethod" finished-at="2025-11-09T15:19:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=configureRoomWithModulesAndMaterials status=SUCCESS method=RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)[pri:0, instance:test.RoomConfigurationWithModuleAdditionTest@49d0e424] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[void test.RoomConfigurationWithModuleAdditionTest.configureRoomWithModulesAndMaterials(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.RoomConfigurationWithModuleAdditionTest -->
+      <class name="test.DeleteAllRoomsInFloorTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:15 IST" name="beforeSuite" finished-at="2025-11-09T15:19:16 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:16 IST" name="beforeMethod" finished-at="2025-11-09T15:19:16 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DeleteAllRoomsInFloorTest.resetFloorPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="resetFloorPlan()[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:16 IST" name="resetFloorPlan" finished-at="2025-11-09T15:19:16 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetFloorPlan -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:16 IST" name="afterMethod" finished-at="2025-11-09T15:19:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resetFloorPlan status=SUCCESS method=DeleteAllRoomsInFloorTest.resetFloorPlan()[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DeleteAllRoomsInFloorTest.resetFloorPlan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:16 IST" name="beforeMethod" finished-at="2025-11-09T15:19:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d9cedeb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DeleteAllRoomsInFloorTest.deleteRooms()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="deleteRooms()[pri:1, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:16 IST" name="deleteRooms" finished-at="2025-11-09T15:19:17 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRooms -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:19:17 IST" name="afterMethod" finished-at="2025-11-09T15:19:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteRooms status=SUCCESS method=DeleteAllRoomsInFloorTest.deleteRooms()[pri:1, instance:test.DeleteAllRoomsInFloorTest@4cf410a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void test.DeleteAllRoomsInFloorTest.deleteRooms()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.DeleteAllRoomsInFloorTest@4cf410a]" started-at="2025-11-09T15:20:18 IST" name="afterSuite" finished-at="2025-11-09T15:20:18 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.DeleteAllRoomsInFloorTest -->
+    </test> <!-- Modules addition and Fetching Price And Error Report -->
+  </suite> <!-- Sample Test Suite -->
+</testng-results>

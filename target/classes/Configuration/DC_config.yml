@@ -1,0 +1,20 @@
+login_Credential:
+  preProd:
+    SFurl: https://design-cafe--newint.sandbox.my.salesforce.com/
+    SFUserName: hl-tech@designcafe.com.newint
+    SFPassword: DCAFE@123456
+    logged_in_user_id : "2091840"
+    dp_email: "abc@designcafe.com"
+    dp_password: "123456"
+    design_User: "test designer dc"
+    DCAppointment_venue: "MGDC"
+
+  prod:
+    SFurl: https://design-cafe.my.salesforce.com/
+    SFUserName: rakesh.kh@designcafe.compro
+    SFPassword: QA@12345
+    logged_in_user_id: "2092687"
+    dp_email: "testuat@designcafe.com"
+    dp_password: "Homelane@1234"
+    design_User: "Test UAT"
+    DCAppointment_venue: "Test"

@@ -1,0 +1,12 @@
+{
+  "categoryId": 10003,
+  "subCategoryId": 10077,
+  "zoneCode": "112133211",
+  "modulesWithWidth": [
+    {
+      "moduleId": 10023,
+      "width": 250
+    }
+  ],
+  "skirtingModuleId": 10023
+}

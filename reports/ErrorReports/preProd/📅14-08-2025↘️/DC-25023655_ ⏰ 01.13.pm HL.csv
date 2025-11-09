@@ -1,0 +1,10 @@
+s.no,moduleId,moduleName,errorMessage
+138,13304,WDL-430D-DC,"Error in zone : 8_138_13304_WDL-430D-DC for module [Wall Cabinet 2 Shutter Dual Lift Up-430D,13304] : Insufficient accessories. Minimum required: 1 got 0"
+197,13376,GP-H3DR-DC,"Selected Height is 600, Which is outside the allowable limits (Min = 650, Max = 750)"
+197,13376,GP-H3DR-DC,"Error in zone : 5_197_13376_GP-H3DR-DC for module [G Profile-Hob Cabinet 3 Drawer,13376] : Insufficient accessories. Minimum required: 3 got 1"
+117,13243,T1BDR1TSTWO-DC,"Error in zone : 2_117_13243_T1BDR1TSTWO-DC for module [Tall Unit 1 bottom drawer 1 shutter with top wicker basket- Provision for Built-in Oven,13243] : Insufficient accessories. Minimum required: 3 got 2"
+118,13244,T1TDR1TSBWO-DC,"Error in zone : 3_118_13244_T1TDR1TSBWO-DC for module [Tall Unit 1 top drawer 1 shutter with bottom wicker basket- Provision for Built-in Oven,13244] : Insufficient accessories. Minimum required: 3 got 2"
+119,13245,T2BDR1TSTWO-DC,"Error in zone : 4_119_13245_T2BDR1TSTWO-DC for module [Tall Unit 2 bottom drawer 1 shutter with top wicker basket- Provision for Built-in Oven,13245] : Insufficient accessories. Minimum required: 3 got 2"
+120,13246,T2TDR1TSBWO-DC,"Error in zone : 5_120_13246_T2TDR1TSBWO-DC for module [Tall Unit 2 top drawer 1 shutter with bottom wicker basket- Provision for Built-in Oven,13246] : Insufficient accessories. Minimum required: 4 got 2"
+190,13369,GP-WLC2S-DC,"Selected Depth is 355, Which is outside the allowable limits (Min = 300, Max = 330)"
+141,13310,Gola-WDL-430D-DC,"Error in zone : 3_141_13310_Gola-WDL-430D-DC for module [Gola Wall Cabinet 2 Shutter Dual Lift Up-430D,13310] : Insufficient accessories. Minimum required: 1 got 0"

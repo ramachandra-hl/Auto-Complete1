@@ -1,0 +1,9 @@
+{
+  "variables": {
+    "roomType": "LivingRoom",
+    "profile": "HOMELANE",
+    "elementalType": "Regular",
+    "cityId": 10001
+  },
+  "query": "query getZoneCatalog($roomType: String!, $profile: OrderProfileType!, $elementalType: String, $cityId: Int!) { getZoneCatalog(roomType: $roomType, profile: $profile, elementalType: $elementalType, cityId: $cityId) { categoryId categoryName subCategoryList { subCategoryId subCategoryName zoneTypes { zoneTypeId zoneTypeName __typename } __typename } __typename } }"
+}

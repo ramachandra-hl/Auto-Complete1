@@ -1,0 +1,3 @@
+s.no,moduleId,moduleName,errorMessage
+4,14134,BMHDL-DC,"Selected Width is 1850, Which is outside the allowable limits (Min = 960, Max = 960)"
+5,13055,B2S-DC,"Selected shutter shade is invalid for Aluminium Profile Shutter Left"

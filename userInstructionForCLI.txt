@@ -1,0 +1,48 @@
+=============================
+▶️ Run from CLI – Full Breakdown
+-----------------------------
+
+Use the following Maven command to execute the test suite with custom configurations:
+
+mvn clean test ^
+  "-Dfilename=xmlFiles/roomWithModules.xml" ^
+  "-DuserConfigPath=C:/Users/nitish.kumar_homelan/Downloads/DC-QA-Automation-Improvements - UserConfiguration Sheet.csv" ^
+  "-DinputFilePath=C:/Users/nitish.kumar_homelan/Downloads/PriceReports with InputSheet - Set_18.csv" ^
+  "-DuseCustomConfig=true"
+
+--------------------------------------------------
+Explanation of Each Parameter:
+--------------------------------------------------
+
+- "-Dfilename=xmlFiles/roomWithModules.xml"
+  ➤ Specifies the TestNG XML file to run.
+  ➤ This file contains your test class definitions.
+  ➤ Example: 'roomWithModules.xml' likely contains tests to add modules to ScPro.
+
+- "-DuserConfigPath=...UserConfiguration Sheet.csv"
+  ➤ Points to a CSV file with per-user configuration.
+  ➤ Contains data like cityId, projectId, environment, etc.
+  ➤ for this please refer userParameterInstruction.txt
+
+- "-DinputFilePath=...PriceReports with InputSheet - Set_18.csv"
+  ➤ Refers to your local file path for  module  input file.
+  ➤ You can also pass Dimension,Material combination,Accessory & Internals in that csv.
+
+- "-DuseCustomConfig=true"
+  ➤ When set to 'true', your framework will read inputs from the above 2 CSV files.
+  ➤ If set to 'false', default  configs will be used which defined in This Script.
+
+--------------------------------------------------
+Quick Notes:
+--------------------------------------------------
+
+✔ Make sure all file paths are correct and accessible.
+✔ Use '^' for multiline command in Windows CMD/Mac.
+✔ Wrap file paths in double quotes if they contain spaces.
+
+--------------------------------------------------
+If Not Works use  One-liner Command:
+--------------------------------------------------
+ex-
+mvn clean test "-Dfilename=xmlFiles/roomWithModules.xml" "-DuserConfigPath=C:/Users/nitish.kumar_homelan/Downloads/DC-QA-Automation-Improvements - UserConfiguration Sheet.csv" "-DinputFilePath=C:/Users/nitish.kumar_homelan/Downloads/PriceReports with InputSheet - Set_18.csv" "-DuseCustomConfig=true"
+

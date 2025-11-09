@@ -1,0 +1,18 @@
+{
+  "zoneType": "Storage",
+  "zoneName": "Storage1736505624852",
+  "categoryId": "10001",
+  "subCategoryId": "10082",
+  "categoryName": "Kitchen",
+  "subCategoryName": "Decko Floor standing-With Skirting",
+  "position": {
+    "x":77692,
+    "y": 0,
+    "z": 5123
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

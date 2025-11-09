@@ -1,0 +1,9 @@
+s.no,moduleId,moduleName,errorMessage
+99,13195,Gola Glass OB-WB-1TD-DC,"Gola Lacquered Glass Drawer Facia required a glass details"
+24,13078,WDL-DC,"Error in zone : 4_24_13078_WDL-DC for module [Wall Cabinet 2 Shutter Dual Lift Up,13078] : Insufficient accessories. Minimum required: 1 got 0"
+38,13096,Gola-B1S1DR-DC,"Error in zone : 4_38_13096_Gola-B1S1DR-DC for module [Gola Base Cabinet 1 Shutter 1 Drawer,13096] : Insufficient accessories. Minimum required: 2 got 1"
+39,13097,Gola-B2S1DR-DC,"Error in zone : 5_39_13097_Gola-B2S1DR-DC for module [Gola Base Cabinet 2 Shutter 1 Drawer,13097] : Insufficient accessories. Minimum required: 2 got 1"
+50,13109,Gola-WDL-DC,"Error in zone : 9_50_13109_Gola-WDL-DC for module [Gola Wall Cabinet 2 Shutter Dual Lift Up,13109] : Insufficient accessories. Minimum required: 1 got 0"
+62,13129,Gola-T1DR1SBOBM-DC,"Error in zone : 5_62_13129_Gola-T1DR1SBOBM-DC for module [Gola Tall Cabinet Shutter- Built In Oven And Built In Microwave,13129] : Insufficient accessories. Minimum required: 2 got 1"
+10,13062,B2S1DR-DC,"Error in zone : 10_10_13062_B2S1DR-DC for module [Base Cabinet 2 Shutter 1 Drawer,13062] : Insufficient accessories. Minimum required: 2 got 1"
+58,13122,T1DR1SBOBM-DC,"Error in zone : 7_58_13122_T1DR1SBOBM-DC for module [Tall Cabinet Shutter- Built In Oven And Built In Microwave,13122] : Insufficient accessories. Minimum required: 2 got 1"

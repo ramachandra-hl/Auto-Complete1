@@ -1,0 +1,11 @@
+{
+  "query": "query getSubCategory($categoryId: String!, $subCategoryId: String!, $priceVersion: String!, $withBasePly: Boolean, $source: String, $city: String, $cancelledSuborder: Boolean) {\n  getSubCategory(categoryId: $categoryId, subCategoryId: $subCategoryId, priceVersion: $priceVersion, withBasePly: $withBasePly, source: $source, city: $city, cancelledSuborder: $cancelledSuborder) {\n    id\n    name\n    fieldData {\n      fieldName\n      fieldValue\n      __typename\n    }\n    wastagePercentage\n    price\n    mov\n    categoryMov\n    hdsAction\n    hasScVisuals\n    pricingInclusion\n    additionalInfo\n    haveLength\n    haveBreadth\n    haveHeight\n    haveQuantity\n    howToQuote\n    priceFormula\n    isSequential\n    haveTx\n    __typename\n    options {\n      optionId\n      title\n      type\n      isRequire\n      price\n      values {\n        title\n        price\n        priceType\n        __typename\n      }\n      __typename\n    }\n    images\n    uom\n  }\n}",
+  "variables": {
+    "categoryId": "CIVIL",
+    "subCategoryId": "863",
+    "withBasePly": true,
+    "priceVersion": "BLR-Jul2025",
+    "source": "SCPRO",
+    "cancelledSuborder": false
+  }
+}

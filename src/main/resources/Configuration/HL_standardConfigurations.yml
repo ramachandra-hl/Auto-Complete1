@@ -1,0 +1,13 @@
+browser: "chrome"
+projectEnvironments:
+  preProd:
+    BaseURL: "https://sc-backend-dev-4.homelane.com"
+    SynapseUrl: "https://synapse-preprod.homelane.com"
+    NucleusUrl: "https://nucleus-api-preprod.homelane.com"
+    RoasterBaseUrl: "https://rosters-preprod-new.homelane.com"
+    ScProUrl: "https://spacecraft-dev-1.homelane.com"
+  prod:
+    BaseURL: "https://sc-backend-production.homelane.com"
+    SynapseUrl: "https://nucleus-synapse-prod.homelane.com"
+    RoasterBaseUrl: "https://rosters.homelane.com"
+    ScProUrl: "https://spacecraft-pro.homelane.com"

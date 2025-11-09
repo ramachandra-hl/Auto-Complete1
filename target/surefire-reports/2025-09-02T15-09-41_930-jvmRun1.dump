@@ -1,0 +1,201 @@
+# Created at 2025-09-02T15:09:47.203
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (3660@AST-LP-HL1808):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@23/java.io.RandomAccessFile.readBytes0(Native Method)
+        at java.base@23/java.io.RandomAccessFile.readBytes(RandomAccessFile.java:428)
+        at java.base@23/java.io.RandomAccessFile.read(RandomAccessFile.java:478)
+        at java.base@23/java.io.RandomAccessFile.readFully(RandomAccessFile.java:542)
+        at java.base@23/java.util.zip.ZipFile$Source.readFullyAt(ZipFile.java:1595)
+        at java.base@23/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:950)
+        at java.base@23/java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:966)
+        at java.base@23/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:474)
+        at java.base@23/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:176)
+        at java.base@23/jdk.internal.loader.Resource.getBytes(Resource.java:126)
+        at java.base@23/jdk.internal.loader.URLClassPath$JarLoader$2.getBytes(URLClassPath.java:851)
+        at java.base@23/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:859)
+        at java.base@23/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+        at java.base@23/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+        at java.base@23/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+        at java.base@23/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+        at java.base@23/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+        at app//org.codehaus.groovy.reflection.GeneratedMetaMethod$Proxy.createProxy(GeneratedMetaMethod.java:106)
+        at app//org.codehaus.groovy.reflection.GeneratedMetaMethod$Proxy.proxy(GeneratedMetaMethod.java:98)
+        at app//org.codehaus.groovy.reflection.GeneratedMetaMethod$Proxy.isValidMethod(GeneratedMetaMethod.java:82)
+        at app//groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3338)
+        at app//groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3302)
+        at app//groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1482)
+        at app//groovy.lang.MetaClassImpl.createPojoCallSite(MetaClassImpl.java:3570)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.createPojoSite(CallSiteArray.java:126)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:163)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+        at app//io.restassured.internal.http.ContentTypeSubTypeExtractor$_getSubTypeValueFromContentType_closure1.doCall(ContentTypeSubTypeExtractor.groovy:36)
+        at java.base@23/java.lang.invoke.LambdaForm$DMH/0x00000174502d0000.invokeVirtual(LambdaForm$DMH)
+        at java.base@23/java.lang.invoke.LambdaForm$MH/0x0000017450028000.invoke(LambdaForm$MH)
+        at java.base@23/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at java.base@23/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+        at java.base@23/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+        at java.base@23/java.lang.reflect.Method.invoke(Method.java:580)
+        at app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+        at app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+        at app//org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:279)
+        at app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+        at app//groovy.lang.Closure.call(Closure.java:433)
+        at app//groovy.lang.Closure.call(Closure.java:422)
+        at app//org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2200)
+        at app//org.codehaus.groovy.runtime.dgm$202.invoke(Unknown Source)
+        at app//org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:253)
+        at app//org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:57)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+        at app//io.restassured.internal.http.ContentTypeSubTypeExtractor.getSubTypeValueFromContentType(ContentTypeSubTypeExtractor.groovy:33)
+        at io.restassured.internal.http.ContentTypeSubTypeExtractor$getSubTypeValueFromContentType.call(Unknown Source)
+        at app//io.restassured.internal.http.CharsetExtractor.getCharsetFromContentType(CharsetExtractor.groovy:25)
+        at io.restassured.internal.http.CharsetExtractor$getCharsetFromContentType.call(Unknown Source)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+        at app//io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.findCharset(RestAssuredResponseOptionsGroovyImpl.groovy:254)
+        at app//io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.asString(RestAssuredResponseOptionsGroovyImpl.groovy:188)
+        at app//io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.asString(RestAssuredResponseOptionsGroovyImpl.groovy:180)
+        at app//io.restassured.internal.RestAssuredResponseOptionsImpl.asString(RestAssuredResponseOptionsImpl.java:234)
+        at io.restassured.response.ResponseBodyData$asString.call(Unknown Source)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:130)
+        at app//io.restassured.internal.support.Prettifier.getPrettifiedBodyIfPossible(Prettifier.groovy:44)
+        at io.restassured.internal.support.Prettifier$getPrettifiedBodyIfPossible.call(Unknown Source)
+        at app//org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+        at app//org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+        at app//io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.asPrettyString(RestAssuredResponseOptionsGroovyImpl.groovy:184)
+        at app//io.restassured.internal.RestAssuredResponseOptionsImpl.asPrettyString(RestAssuredResponseOptionsImpl.java:242)
+        at app//services.UrlService.getUrlSpaceCraft(UrlService.java:29)
+        at app//services.UrlService.getSpaceCraftToken(UrlService.java:33)
+        at app//configurator.TestConfig.<init>(TestConfig.java:25)
+        at app//test.DeleteAllRoomsInFloorTest.<init>(DeleteAllRoomsInFloorTest.java:7)
+        at java.base@23/java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(DirectMethodHandle$Holder)
+        at java.base@23/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at java.base@23/jdk.internal.reflect.DirectConstructorHandleAccessor.invokeImpl(DirectConstructorHandleAccessor.java:86)
+        at java.base@23/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+        at java.base@23/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+        at java.base@23/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+        at app//org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:40)
+        at app//org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18)
+        at app//org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:179)
+        at app//org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:88)
+        at app//org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:41)
+        at app//org.testng.internal.objects.GuiceBasedObjectDispenser.dispenseObject(GuiceBasedObjectDispenser.java:41)
+        at app//org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:31)
+        at app//org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:107)
+        at app//org.testng.internal.ClassImpl.getObjects(ClassImpl.java:140)
+        at app//org.testng.internal.IObject.lambda$objects$0(IObject.java:59)
+        at app//org.testng.internal.IObject$$Lambda/0x00000174501ac668.apply(Unknown Source)
+        at java.base@23/java.util.Optional.map(Optional.java:260)
+        at app//org.testng.internal.IObject.objects(IObject.java:59)
+        at app//org.testng.TestClass.getObjects(TestClass.java:150)
+        at app//org.testng.TestClass.initTestClassesAndInstances(TestClass.java:126)
+        at app//org.testng.TestClass.init(TestClass.java:118)
+        at app//org.testng.TestClass.<init>(TestClass.java:83)
+        at app//org.testng.TestRunner.initMethods(TestRunner.java:473)
+        at app//org.testng.TestRunner.init(TestRunner.java:347)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@23/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@23/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+        at java.base@23/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@23/java.lang.Object.wait0(Native Method)
+        at java.base@23/java.lang.Object.wait(Object.java:378)
+        at java.base@23/java.lang.Object.wait(Object.java:352)
+        at java.base@23/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+        at java.base@23/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:166)
+        at java.base@23/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+        at java.base@23/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@23/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@23/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@23/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+        at java.base@23/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:79)
+        at java.base@23/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:151)
+        at java.base@23/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:229)
+        at java.base@23/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@23/java.lang.Thread.runWith(Thread.java:1588)
+        at java.base@23/java.lang.Thread.run(Thread.java:1575)
+        at java.base@23/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@23/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@23/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@23/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+        at java.base@23/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@23/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@23/java.lang.Thread.runWith(Thread.java:1588)
+        at java.base@23/java.lang.Thread.run(Thread.java:1575)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@23/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@23/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:187)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@23/java.lang.Thread.runWith(Thread.java:1588)
+        at java.base@23/java.lang.Thread.run(Thread.java:1575)
+
+"Log4j2-TF-2-Scheduled-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@23/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@23/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@23/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+        at java.base@23/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@23/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@23/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@23/java.lang.Thread.runWith(Thread.java:1588)
+        at java.base@23/java.lang.Thread.run(Thread.java:1575)
+
+"ForkJoinPool.commonPool-worker-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@23/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@23/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2135)
+        at java.base@23/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2099)
+        at java.base@23/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2043)
+        at java.base@23/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+
+"ForkJoinPool.commonPool-worker-2" 
+   java.lang.Thread.State: WAITING
+        at java.base@23/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@23/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:2135)
+        at java.base@23/java.util.concurrent.ForkJoinPool.deactivate(ForkJoinPool.java:2099)
+        at java.base@23/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2043)
+        at java.base@23/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+    <Properties>
+        <!-- Log file location -->
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="LOG_FILE">${LOG_DIR}/main.log</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] %c{1} - %m%n</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+
+        <!-- File output -->
+        <File name="File" fileName="${LOG_FILE}" append="true">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Suppress noisy loggers -->
+        <Logger name="org.apache.http" level="ERROR" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="org.apache.http.wire" level="OFF" additivity="false"/>
+        <Logger name="org.apache.http.impl.conn" level="ERROR" additivity="false"/>
+        <Logger name="org.apache.http.impl.client" level="ERROR" additivity="false"/>
+        <Logger name="org.apache.http.headers" level="ERROR" additivity="false"/>
+        <Logger name="io.restassured" level="ERROR" additivity="false"/>
+        <Logger name="com.jayway.restassured" level="ERROR" additivity="false"/>
+        <Logger name="org.apache.commons.logging" level="ERROR" additivity="false"/>
+        <Logger name="org.springframework.jcl" level="ERROR" additivity="false"/>
+        <Logger name="org.springframework.boot" level="INFO" additivity="false"/>
+        <Logger name="org.springframework.web" level="INFO" additivity="false"/>
+
+        <!-- Root logger (your app logs) -->
+        <Root level="INFO">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

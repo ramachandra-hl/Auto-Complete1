@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Test Suite" verbose="1" >
+    <test name="Modules addition and materials/Accessory Tagging ">
+        <classes>
+            <class name="test.DeleteAllRoomsInFloorTest"/>
+            <class name="test.RoomConfigurationWithModuleAdditionTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "745564",
+      "roleName": "designer_1",
+      "is_curated": "No",
+      "isNewDp": false,
+      "reason": "No Matching DPs available"
+    }, {
+      "id": "745564",
+      "roleName": "designer_2"
+    }
+  ],
+  "customerID": "72745718",
+  "loggedInUserID": "631342"
+}

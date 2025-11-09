@@ -1,0 +1,11 @@
+{
+  "operationName": "getInternalsQuery",
+  "variables": {
+    "moduleId": 12766,
+    "applicableSection": "MID",
+    "dimension": "900 X 560 X 2250",
+    "categoryId": 10003,
+    "subcategoryId": 10077
+  },
+  "query": "query getInternalsQuery($moduleId: Int!, $applicableSection: String!, $dimension: String!, $categoryId: Int!, $subcategoryId: Int!) {\n  getInternals(moduleId: $moduleId, applicableSection: $applicableSection, dimension: $dimension, categoryId: $categoryId, subcategoryId: $subcategoryId) {\n    internalId\n    internalName\n    internalDescription\n    image\n    brand\n    lifestyle\n    height\n    accessories {\n      code\n      name\n      imageUrl\n      minQty\n      maxQty\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

@@ -1,0 +1,7 @@
+s.no,Room Type,Room Name,Furniture Type,categoryName,CategoryID,subCategoryName,SubCategoryID,ModuleId,modulename,width,depth,height,AliasName
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,10909,AF,300,660,2400,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,12672,VS-FCS1,1800,490,3300,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,12673,VS-FCS2,2400,490,3300,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,12674,VS-FCS3,2400,490,3300,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Flex Composite Floor-to-Ceiling,10101,12675,VS-FCS4,2400,490,3300,
+,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Versa Floor-to-Ceiling,10100,10909,AF,300,660,2400,

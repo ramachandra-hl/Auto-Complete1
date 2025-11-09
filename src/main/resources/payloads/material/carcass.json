@@ -1,0 +1,28 @@
+{
+  "modules": [
+    {
+      "moduleObjectId": "4d2e28d9-56fb-401f-8a72-7f72a5ff00b9-0",
+      "carcassMaterial": {
+        "carcassName": "Hydrogaurd Plus HDF",
+        "carcassCode": "10009",
+        "carcassColourCode": "11001",
+        "carcassColourImage": "https://d2sy33g84bb5i8.cloudfront.net/textures/0d0bbefa-1a3c-487f-8e03-577172c27557.jpg",
+        "carcassColourName": "Chalk Grey",
+        "carcassMaterialId": "3e3ad017-d732-4252-b8d3-27992ae48d81",
+        "carcassMirrorData": {
+          "meshId": null,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    }
+  ]
+}

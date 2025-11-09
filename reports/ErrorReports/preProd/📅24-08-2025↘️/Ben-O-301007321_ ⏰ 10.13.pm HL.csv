@@ -1,0 +1,8 @@
+s.no,moduleId,moduleName,errorMessage
+1,13748,HWF&S-1S-S-DC,"Selected Depth is 80, Which is outside the allowable limits (Min = 100, Max = 100)"
+2,13748,HWF&S-1S-S-DC,"Selected Depth is 80, Which is outside the allowable limits (Min = 100, Max = 100)"
+3,13749,HWF&S-2S-S-DC,"Selected Depth is 80, Which is outside the allowable limits (Min = 100, Max = 100)"
+4,13749,HWF&S-2S-S-DC,"Selected Depth is 80, Which is outside the allowable limits (Min = 100, Max = 100)"
+110,13756,SMWTF-inline-S-DC,"Selected Width is 100, Which is outside the allowable limits (Min = 300, Max = 2400)"
+111,13756,SMWTF-inline-S-DC,"Selected Width is 100, Which is outside the allowable limits (Min = 300, Max = 2400)"
+103,13830,Skirting-Inset-DC,"Selected Width is 500, Which is outside the allowable limits (Min = 100, Max = 120)"

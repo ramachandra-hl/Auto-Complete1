@@ -1,0 +1,36 @@
+{
+  "furnitureHdsQuoteData": {
+    "suppliedBy": "Homelane",
+    "installedBy": "Homelane",
+    "offerPrice": 0,
+    "installationPrice": 0,
+    "productId": 26424,
+    "productName": "Installation Charges for Metal Shoe Racks",
+    "hdsId": 26424,
+    "height": 800,
+    "width": 800,
+    "length": 800,
+    "imageUrl": "https://d62q8uruxy0iw.cloudfront.net/materials/aa633f2c-f2cc-43f5-bf4e-2a7071dc690e.jpg?Expires=1902471628&Signature=c8tbOxAaBJaSvPDKt8M83za7oYCdW131kIh4XdAQdF~HUmJt0W69TWw0vKTYIkOw2PXUSN-1yIg7rXa6HS8afMW8j-nzxt0bYIoKav4NdcvFo4eP28gXDSGIeIpNatIyuHbFfYmx3mLAVir0fmKN~6OUSK6yazxmzFxX6tDY27-8W4CDS0I5A9Bx4WzTTouz7-BxZK5Petjp8PoMFDHxRM-6tBKGpahP8JrzLjf4gbJgV5D2opZrhC~0n9yqbUOAY-xhzPKrY7WAS6VT2Y3Pw-W6fVJKKrERFqmX5RBPGOnQ2EmGh1XH-3pcTdsV0~crnJ1BGqw2ASi~6f0xl34ekg__&Key-Pair-Id=APKAIN4F6RU2XXB4ID4A",
+    "name": "Loose Furniture",
+    "category": "Metal Shoe Racks",
+    "categoryId": 938,
+    "subCategoryId": 939,
+    "subCategory": "All Metal Shoe Racks",
+    "quantity": 1,
+    "hasLength": false,
+    "hasBreadth": false,
+    "hasHeight": false,
+    "hasQuantity": false,
+    "hlSkuId": "FUR-0120-0000",
+    "brand": "Others"
+  },
+  "hdsServiceData": {
+    "projectId": "c137c58f-4777-4900-b32e-be6a32fb4fb5",
+    "floorId": "d85d4e86-0fa4-40c4-bed4-90924bb13ac9",
+    "roomId": "a802cb8b2d0b9d157abe62dc2a42e71b",
+    "unitEntryId": null,
+    "visibility": true,
+    "serviceType": "QUANTITY",
+    "hdsType": "LOOSE_FURNITURE"
+  }
+}

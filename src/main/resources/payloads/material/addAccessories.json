@@ -1,0 +1,46 @@
+{
+  "modules": [
+    {
+      "moduleObjectId": "MOD001",
+      "shutterAccessories": [
+        {
+          "shutterObjectId": "SHUTTER123",
+          "accessory": {
+            "code": "SH01",
+            "name": "Handle A",
+            "quantity": 1,
+            "enabled": true,
+            "image": "img1.png",
+            "htcMotion": "Soft",
+            "htcMake": "Hettich",
+            "softClose": true
+          },
+          "addOnAccessories": [],
+          "cutleryAccessories": []
+        },
+        {
+          "shutterObjectId": "SHUTTER124",
+          "accessory": {},
+          "addOnAccessories": [],
+          "cutleryAccessories": []
+        }
+      ],
+      "cabinetAccessories": [
+        {
+          "accessory": {
+            "code": 101,
+            "name": "Tray Holder",
+            "quantity": 1,
+            "enabled": true,
+            "image": "img2.png",
+            "htcMotion": "Standard",
+            "htcMake": "Blum",
+            "softClose": true
+          },
+          "addOnAccessories": [],
+          "cutleryAccessories": []
+        }
+      ]
+    }
+  ]
+}

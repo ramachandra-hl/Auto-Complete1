@@ -1,0 +1,14 @@
+projectID,36fed562-4545-4f99-99fd-bce91ca19c3a
+priceVersion,10100
+cityCode,10001
+orderProfileType,HOMELANE
+environment,HL
+modulesInRoom,2
+
+senderEmail,ramachandra.hlc@homelane.com
+gmail.app.password,ddcimczlmpvalrvq
+2DDRequired,FALSE
+emailContent,"Hi Team, please find the attached files, kindly validate and share the reports."
+emailSubject,ticketName
+toEmails,"ramachanndra2001@gmail.com,civilramachandra2001@gmail.com"
+ccEmails,nitishk.hlc@homelane.com

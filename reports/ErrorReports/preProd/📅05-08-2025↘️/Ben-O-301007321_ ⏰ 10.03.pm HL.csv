@@ -1,0 +1,5 @@
+s.no,moduleId,moduleName,errorMessage
+3,14116,VNWA1S1OP-RI-DC,"Selected Width is 600, Which is outside the allowable limits (Min = 750, Max = 750)"
+4,14134,BMHDL-DC,"Selected Width is 1850, Which is outside the allowable limits (Min = 960, Max = 960)"
+2,14146,VFB-DC,"Selected Depth is 18, Which is outside the allowable limits (Min = 330, Max = 560)"
+1,14141,VB1S-DC,"Selected Depth is 300, Which is outside the allowable limits (Min = 330, Max = 560)"

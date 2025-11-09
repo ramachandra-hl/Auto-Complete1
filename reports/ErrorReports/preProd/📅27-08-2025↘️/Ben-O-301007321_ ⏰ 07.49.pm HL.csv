@@ -1,0 +1,5 @@
+s.no,moduleId,moduleName,errorMessage
+21,13737,HW-2S-S-DC,"Selected wardrobe internal HW1ID1FS5RS1HV-2S-DC Width is 1000, Which is outside the allowable limits (Min = 800, Max = 900)"
+22,13738,HW1ED-2S-S-DC,"Selected Width is 1000, Which is outside the allowable limits (Min = 800, Max = 900)"
+23,13739,HW2ED-2S-S-DC,"Selected Width is 1000, Which is outside the allowable limits (Min = 800, Max = 900)"
+25,13739,HW2ED-2S-S-DC,"Selected Width is 1000, Which is outside the allowable limits (Min = 800, Max = 900)"

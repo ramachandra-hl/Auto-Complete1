@@ -1,0 +1,10 @@
+{
+  "query": "query getFurniture($roomType: String!, $productType: String!, $catalogProfileType: CatalogProfileType, $city: String, $cancelledSuborder: Boolean) {\n  getFurniture(roomType: $roomType, productType: $productType, catalogProfileType: $catalogProfileType, city: $city, cancelledSuborder: $cancelledSuborder) {\n    categoryId\n    categoryName\n    baseImage\n    defaultName\n    defaultImage\n    subCategoryList {\n      subCategoryId\n      subCategoryName\n      baseImage\n      fieldProductCount {\n        fieldName\n        fieldValues\n        isFilter\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n",
+  "variables": {
+    "roomType": "LIVINGROOM",
+    "productType": "APPLIANCE",
+    "catalogProfileType": "HOMELANE",
+    "city": "bengaluru",
+    "cancelledSuborder": false
+  }
+}

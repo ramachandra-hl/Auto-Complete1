@@ -1,0 +1,9 @@
+{
+  "query": "query getHandlesQuery($categoryId: Int!, $subCategoryId: Int, $internal: Boolean, $orderProfileType: OrderProfileType!) {\n  getHandles(categoryId: $categoryId, subCategoryId: $subCategoryId, internal: $internal, orderProfileType: $orderProfileType) {\n    name\n    spacecraftHandleId\n    finish\n    budgetType\n    height\n    imageUrl\n    pitch\n    isEnabled\n    handleType\n    shutterFamilyIds\n    __typename\n  }\n}",
+  "variables": {
+    "categoryId": 10001,
+    "subCategoryId": 10011,
+    "internal": false,
+    "orderProfileType": "HOMELANE"
+  }
+}

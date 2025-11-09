@@ -1,0 +1,3 @@
+s.no,moduleId,moduleName,errorMessage
+61,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-R-1ID1LK2FS2RS1HR1HV-DC Width is 2350, Which is outside the allowable limits (Min = 1500, Max = 1800)"
+103,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-L-4FS1HR-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"

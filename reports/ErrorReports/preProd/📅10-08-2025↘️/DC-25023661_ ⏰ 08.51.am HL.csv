@@ -1,0 +1,4 @@
+s.no,moduleId,moduleName,errorMessage
+510,13731,Gola-B1S1DR-Regular-v1-DC,"Selected Depth is 400, Which is outside the allowable limits (Min = 540, Max = 580)"
+510,13731,Gola-B1S1DR-Regular-v1-DC,"Error in zone : 3_510_13731_Gola-B1S1DR-Regular-v1-DC for module [Semi Modular Gola Base 1 Shutter 1 Drawer-Regular-Version 1,13731] : Insufficient accessories. Minimum required: 2 got 0"
+579,13820,B1DR1O-430D-S-DC,"Couldn't find shutter Name[Aluminium Profile Drawer] and Type[APDF]"

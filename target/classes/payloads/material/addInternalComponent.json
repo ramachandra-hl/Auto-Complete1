@@ -1,0 +1,22 @@
+{
+  "moduleObjectId": "15f7a4e8-691a-4de8-86cf-468e4df81bd1-0",
+  "internals": [
+    {
+      "dimension": "900 X 560 X 1800",
+      "internalId": 14847,
+      "section": "MID",
+      "height": 1800,
+      "internalProperty": null,
+      "position": {
+        "x": 0,
+        "y": 108,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  ]
+}

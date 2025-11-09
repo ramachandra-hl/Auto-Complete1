@@ -1,0 +1,12 @@
+{
+  "operationName": "getZonesListing",
+  "variables": {
+    "categoryId": 10003,
+    "subCategoryId": 10001,
+    "roomType": "Livingroom",
+    "zoneType": "DEFAULT",
+    "filterFields": [],
+    "designerEmail": "testorgstructuredp1@homelane.com"
+  },
+  "query": "query getZonesListing($roomType: String!, $categoryId: String!, $subCategoryId: String!, $zoneType: String, $designerEmail: String, $filterFields: [FieldRequest]) {\n  getZoneListForType(zoneCategory: $categoryId, zoneSubCategory: $subCategoryId, roomType: $roomType, zoneType: $zoneType, designerEmail: $designerEmail, filterFields: $filterFields) {\n    zoneId\n    zoneName\n    zonePrice\n    zoneImage\n    designedBy\n    favourite\n    zoneWidth\n    zoneHeight\n    zoneLength\n    hlZoneId\n    fieldData {\n      fieldName\n      fieldValue\n      __typename\n    }\n    zoneTagsData {\n      fieldName\n      fieldValue\n      fieldObjectValue {\n        key\n        value\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

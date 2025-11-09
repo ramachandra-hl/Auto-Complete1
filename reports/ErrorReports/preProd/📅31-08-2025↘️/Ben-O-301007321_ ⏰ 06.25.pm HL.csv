@@ -1,0 +1,4 @@
+s.no,moduleId,moduleName,errorMessage
+23,13739,HW2ED-2S-S-DC,"Selected wardrobe internal HW2ED1ID4FS-2S-450QD-300H(ED)-200H-DC Width is 900, Which is outside the allowable limits (Min = 901, Max = 1200)"
+22,13738,HW1ED-2S-S-DC,"Selected Width is 1200, Which is outside the allowable limits (Min = 800, Max = 900)"
+25,13739,HW2ED-2S-S-DC,"Selected wardrobe internal HW2ED2ID4FS-2S-450QD-300H(ED)-200H-DC Width is 900, Which is outside the allowable limits (Min = 901, Max = 1200)"

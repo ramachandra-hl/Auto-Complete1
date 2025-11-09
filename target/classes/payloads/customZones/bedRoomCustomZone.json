@@ -1,0 +1,18 @@
+{
+  "zoneType": "DEFAULT",
+  "zoneName": "DEFAULT1729763340331",
+  "categoryId": "10003",
+  "subCategoryId": "10001",
+  "categoryName": "Wardrobe",
+  "subCategoryName": "Hinged",
+  "position": {
+    "x": 35927.75833660865,
+    "y": 0,
+    "z": 5611.164413190104
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

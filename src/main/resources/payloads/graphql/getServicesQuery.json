@@ -1,0 +1,9 @@
+{
+  "query": "query getServices($roomType: String, $priceVersion: String!, $catalogProfileType: CatalogProfileType, $cancelledSuborder: Boolean) {\n  getServices(roomType: $roomType, priceVersion: $priceVersion, catalogProfileType: $catalogProfileType, cancelledSuborder: $cancelledSuborder) {\n    categoryName\n    categoryId\n    subCategories {\n      subCategoryId\n      subCategoryName\n      fieldProductCount {\n        fieldName\n        fieldValues\n        isFilter\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n",
+  "variables": {
+    "roomType": "Livingroom",
+    "priceVersion": "BLR-Jul2025",
+    "catalogProfileType": "HOMELANE",
+    "cancelledSuborder": false
+  }
+}

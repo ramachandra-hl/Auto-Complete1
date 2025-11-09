@@ -1,0 +1,218 @@
+[
+  {
+    "key": "fda4e87fffddc74a8301574be20115f8",
+    "caption": "wall M",
+    "category": "WallGroup",
+    "wallType": "BRICK",
+    "url": null,
+    "color": "#979797",
+    "length": 10100,
+    "wallHeight": 3000,
+    "width": null,
+    "thickness": 100,
+    "isGroup": true,
+    "isDivider": false,
+    "startPoint": {
+      "className": "go.Point",
+      "x": 48345.1013189871,
+      "y": 4951.004351944462
+    },
+    "endPoint": {
+      "className": "go.Point",
+      "x": 58538.345572990394,
+      "y": 4951.004351944462
+    },
+    "smpt1": {
+      "className": "go.Point",
+      "x": 48395.1013189871,
+      "y": 5001.004351944462
+    },
+    "smpt2": {
+      "className": "go.Point",
+      "x": 48295.1013189871,
+      "y": 4901.004351944462
+    },
+    "empt1": {
+      "className": "go.Point",
+      "x": 58488.345572990394,
+      "y": 5001.004351944462
+    },
+    "empt2": {
+      "className": "go.Point",
+      "x": 58588.345572990394,
+      "y": 4901.004351944462
+    },
+    "minLocation": {
+      "className": "go.Point",
+      "x": "NaN",
+      "y": "-9e9999"
+    },
+    "maxLocation": {
+      "className": "go.Point",
+      "x": "NaN",
+      "y": "9e9999"
+    }
+  },
+  {
+    "key": "21dc37523b532c161cb0405b210af0be",
+    "caption": "wall P",
+    "category": "WallGroup",
+    "wallType": "BRICK",
+    "url": null,
+    "color": "#979797",
+    "length": 10240,
+    "wallHeight": 3000,
+    "width": null,
+    "thickness": 100,
+    "isGroup": true,
+    "isDivider": false,
+    "startPoint": {
+      "className": "go.Point",
+      "x": 48345.1013189871,
+      "y": 15289.86638100495
+    },
+    "endPoint": {
+      "className": "go.Point",
+      "x": 48345.1013189871,
+      "y": 4951.004351944462
+    },
+    "smpt1": {
+      "className": "go.Point",
+      "x": 48395.1013189871,
+      "y": 15239.86638100495
+    },
+    "smpt2": {
+      "className": "go.Point",
+      "x": 48295.1013189871,
+      "y": 15339.86638100495
+    },
+    "empt1": {
+      "className": "go.Point",
+      "x": 48395.1013189871,
+      "y": 5001.004351944462
+    },
+    "empt2": {
+      "className": "go.Point",
+      "x": 48295.1013189871,
+      "y": 4901.004351944462
+    },
+    "minLocation": {
+      "className": "go.Point",
+      "x": "-9e9999",
+      "y": "NaN"
+    },
+    "maxLocation": {
+      "className": "go.Point",
+      "x": "9e9999",
+      "y": "NaN"
+    }
+  },
+  {
+    "key": "ff772754fb1b4ea7ede55bd9de62bf04",
+    "caption": "wall O",
+    "category": "WallGroup",
+    "wallType": "BRICK",
+    "url": null,
+    "color": "#979797",
+    "length": 10100,
+    "wallHeight": 3000,
+    "width": null,
+    "thickness": 100,
+    "isGroup": true,
+    "isDivider": false,
+    "startPoint": {
+      "className": "go.Point",
+      "x": 58538.345572990394,
+      "y": 15289.86638100495
+    },
+    "endPoint": {
+      "className": "go.Point",
+      "x": 48345.1013189871,
+      "y": 15289.86638100495
+    },
+    "smpt1": {
+      "className": "go.Point",
+      "x": 58488.345572990394,
+      "y": 15239.86638100495
+    },
+    "smpt2": {
+      "className": "go.Point",
+      "x": 58588.345572990394,
+      "y": 15339.86638100495
+    },
+    "empt1": {
+      "className": "go.Point",
+      "x": 48395.1013189871,
+      "y": 15239.86638100495
+    },
+    "empt2": {
+      "className": "go.Point",
+      "x": 48295.1013189871,
+      "y": 15339.86638100495
+    },
+    "minLocation": {
+      "className": "go.Point",
+      "x": "NaN",
+      "y": "-9e9999"
+    },
+    "maxLocation": {
+      "className": "go.Point",
+      "x": "NaN",
+      "y": "9e9999"
+    }
+  },
+  {
+    "key": "9accb6ff67c766addd7e209a813fd757",
+    "caption": "wall N",
+    "category": "WallGroup",
+    "wallType": "BRICK",
+    "url": null,
+    "color": "#979797",
+    "length": 10240,
+    "wallHeight": 3000,
+    "width": null,
+    "thickness": 100,
+    "isGroup": true,
+    "isDivider": false,
+    "startPoint": {
+      "className": "go.Point",
+      "x": 58538.345572990394,
+      "y": 4951.004351944462
+    },
+    "endPoint": {
+      "className": "go.Point",
+      "x": 58538.345572990394,
+      "y": 15289.86638100495
+    },
+    "smpt1": {
+      "className": "go.Point",
+      "x": 58488.345572990394,
+      "y": 5001.004351944462
+    },
+    "smpt2": {
+      "className": "go.Point",
+      "x": 58588.345572990394,
+      "y": 4901.004351944462
+    },
+    "empt1": {
+      "className": "go.Point",
+      "x": 58488.345572990394,
+      "y": 15239.86638100495
+    },
+    "empt2": {
+      "className": "go.Point",
+      "x": 58588.345572990394,
+      "y": 15339.86638100495
+    },
+    "minLocation": {
+      "className": "go.Point",
+      "x": "-9e9999",
+      "y": "NaN"
+    },
+    "maxLocation": {
+      "className": "go.Point",
+      "x": "9e9999",
+      "y": "NaN"
+    }
+  }
+]

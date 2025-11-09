@@ -1,0 +1,15 @@
+{
+  "user_id": "72224348",
+  "email": "hxxxxxxxxxxxxxxx1@yxxxxxx.xxm",
+  "dp_email": "testorgstructuredp1@homelane.com",
+  "property_type": "Apartment",
+  "property_config": "2 BHK",
+  "built_up": "2",
+  "move_in_date": "2025-04-03T18:30:00.000Z",
+  "city": "Bengaluru",
+  "address": "Test yantra, Jayanagar, Bengaluru",
+  "checkInFlag": false,
+  "isPro": "1",
+  "autoCreateProject": false,
+  "possession": 1
+}

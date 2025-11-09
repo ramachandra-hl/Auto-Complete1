@@ -1,0 +1,16 @@
+[
+  {
+    "moduleId": "4d2e28d9-56fb-401f-8a72-7f72a5ff00b9-0",
+    "isSectionEnabled": {},
+    "shutterIds": {},
+    "designData": {
+      "finishCategory": "Nova",
+      "finishType": "Default",
+      "finishSubType": null,
+      "shutterImage": "https://hl-nucleus-dev.s3.amazonaws.com/dc/shutter-images/SH_TYPE_15_2D.png",
+      "designName": "TY-4-2 unequal vertical Angular shutter"
+    },
+    "frameData": {},
+    "selectedShutterDesign": ""
+  }
+]

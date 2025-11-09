@@ -1,0 +1,17 @@
+{
+  "operationName": "getColourData",
+  "variables": {
+    "materialType": "shutter",
+    "cityId": 10001,
+    "materialId": "10004-10006",
+    "finishId": "",
+    "orderProfileType": "HOMELANE",
+    "priceVersion": "10106",
+    "paymentStage": 0,
+    "projectCreationDate": 1747978338509,
+    "isElemental": false,
+    "elementalType": "",
+    "orderBookingDate": null
+  },
+  "query": "query getColourData($materialId: String!, $materialType: String!, $category: String, $subCategory: String, $family: String, $cityId: Int!, $orderProfileType: OrderProfileType!, $priceVersion: Int, $finishId: String, $paymentStage: Int, $projectCreationDate: String, $isElemental: Boolean, $elementalType: String, $orderBookingDate: String) {\n  getColour(materialId: $materialId, cityId: $cityId, materialType: $materialType, category: $category, subCategory: $subCategory, family: $family, orderProfileType: $orderProfileType, priceVersion: $priceVersion, finishId: $finishId, paymentStage: $paymentStage, projectCreationDate: $projectCreationDate, isElemental: $isElemental, elementalType: $elementalType, orderBookingDate: $orderBookingDate) {\n    colourId\n    colourName\n    colourImage\n    assetMaterialId\n    __typename\n  }\n}\n"
+}

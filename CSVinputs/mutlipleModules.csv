@@ -1,0 +1,5 @@
+s.no,Room Type,Room Name,ModuleId,ModuleName,CategoryID,SubCategoryID,CategoryName,SubCategoryName,internalId,section
+1,LivingRoom,LivingRoom,10192,HW-1S,10003,10001,Wardrobe,Hinged,,
+2,LivingRoom,LivingRoom,11288,HWSS-1S,10003,10001,Wardrobe,Hinged,,
+4,LivingRoom,LivingRoom,11693,VS2-HW-2S,10003,10077,Wardrobe,Versa Hinge Wardrobe,,
+3,LivngRoom,LivingRoom,12650,VS-AS3,10003,10100,Wardrobe,Versa Floor-to-Ceiling,,

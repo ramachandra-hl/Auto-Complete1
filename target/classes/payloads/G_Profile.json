@@ -1,0 +1,32 @@
+{
+  "golaEnabled": false,
+  "loftEnabled": false,
+  "pushToOpenEnabled": true,
+  "hideAllLoftModules": false,
+  "closedVisible": false,
+  "existingClosedVisible": false,
+  "profileType": "G_PROFILE",
+  "profileMaterial": {
+    "colourCode": "13874",
+    "colourName": "G PROFILE-BLACK",
+    "colourImage": "https://d2sy33g84bb5i8.cloudfront.net/materials/155ce693-225c-4f21-a6d2-27a73bc81d9d",
+    "materialId": "28cdc5da-07ef-4f12-bd81-c6a3a39c9459",
+    "colorProperties": {
+      "alphaTest": "0.0",
+      "color": "0b0b0b",
+      "colorPropertyId": "975dcbe1-6ea3-4200-ade3-8a3d9f762d7e",
+      "emissive": "000000",
+      "envMapIntensity": "0.0",
+      "materialId": "28cdc5da-07ef-4f12-bd81-c6a3a39c9459",
+      "metalness": "1.0",
+      "opacity": "0.0",
+      "reflectivity": "0.0",
+      "roughness": "0.5",
+      "transparency": "false",
+      "__typename": "ColorProperties"
+    },
+    "type": "G_PROFILE"
+  },
+  "wallShutterExtension": false,
+  "handleEnabled": true
+}

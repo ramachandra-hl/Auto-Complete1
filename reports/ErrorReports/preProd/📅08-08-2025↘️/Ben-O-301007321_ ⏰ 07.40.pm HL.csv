@@ -1,0 +1,6 @@
+s.no,moduleId,moduleName,errorMessage
+7,13059,B4DR-DC,"Error in zone : 1_7_13059_B4DR-DC for module [Base Cabinet 4 Drawer,13059] : Insufficient accessories. Minimum required: 4 got 0"
+10,13062,B2S1DR-DC,"Error in zone : 4_10_13062_B2S1DR-DC for module [Base Cabinet 2 Shutter 1 Drawer,13062] : Insufficient accessories. Minimum required: 2 got 1"
+4,13056,B1DR-DC,"Error in zone : 4_4_13056_B1DR-DC for module [Base Cabinet 1 Drawer,13056] : Insufficient accessories. Minimum required: 1 got 0"
+5,13057,B2DR-DC,"Error in zone : 5_5_13057_B2DR-DC for module [Base Cabinet 2 Drawer,13057] : Insufficient accessories. Minimum required: 2 got 0"
+6,13058,B3DR-DC,"Error in zone : 6_6_13058_B3DR-DC for module [Base Cabinet 3 Drawer,13058] : Insufficient accessories. Minimum required: 3 got 0"

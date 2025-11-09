@@ -1,0 +1,23 @@
+{
+  "skirtingType": "Tapered",
+  "leg": {
+    "height": "100"
+  },
+  "skirtingWidths": [
+    {
+      "moduleId": "mod-123",
+      "dimension": "100 X 18 X 1200",
+      "position": {
+        "x": 132,
+        "y": 64,
+        "z": 132.26000000000022
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 1.5707963267948966
+      }
+    }
+  ],
+  "countertopDimensions": []
+}

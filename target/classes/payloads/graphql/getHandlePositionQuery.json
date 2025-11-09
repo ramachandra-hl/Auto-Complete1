@@ -1,0 +1,6 @@
+{
+  "query": "query getHandlePositionByModuleIdQuery($modules: [Int!]) {\n  getHandlePositionByModule(modules: $modules) {\n    shutterId\n    handlePositions {\n      positionId\n      desc\n      location\n      xOffset\n      yOffset\n      zOffset\n      rotationFromXY\n      rotationInXY\n      forBase\n      forWall\n      forTall\n      __typename\n    }\n    __typename\n  }\n}",
+  "variables": {
+    "modules": [12745]
+  }
+}

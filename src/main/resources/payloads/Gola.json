@@ -1,0 +1,32 @@
+{
+  "golaEnabled": true,
+  "loftEnabled": true,
+  "pushToOpenEnabled": true,
+  "hideAllLoftModules": false,
+  "closedVisible": true,
+  "existingClosedVisible": true,
+  "profileType": "GOLA",
+  "profileMaterial": {
+    "colourCode": "13878",
+    "colourName": "SILVER",
+    "colourImage": "https://d2sy33g84bb5i8.cloudfront.net/materials/bc6081f7-f969-4072-8688-eaacb00d7402",
+    "materialId": "3a696a26-30e4-4d06-9dfa-1ac1408ce974",
+    "colorProperties": {
+      "alphaTest": "0.0",
+      "color": "a6a6a6",
+      "colorPropertyId": "9409701f-aa20-4871-a62b-b3deb33d7f9b",
+      "emissive": "000000",
+      "envMapIntensity": "0.0",
+      "materialId": "3a696a26-30e4-4d06-9dfa-1ac1408ce974",
+      "metalness": "1.0",
+      "opacity": "0.0",
+      "reflectivity": "0.0",
+      "roughness": "0.5",
+      "transparency": "false",
+      "__typename": "ColorProperties"
+    },
+    "type": "GOLA"
+  },
+  "wallShutterExtension": false,
+  "handleEnabled": true
+}

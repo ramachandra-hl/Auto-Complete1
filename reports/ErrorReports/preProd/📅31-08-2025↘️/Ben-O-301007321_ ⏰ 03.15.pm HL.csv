@@ -1,0 +1,11 @@
+s.no,moduleId,moduleName,errorMessage
+107,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-L-4ID4FS-QD-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"
+172,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-R-4FS1HR-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"
+176,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-R-4ID4FS-QD-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"
+94,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-L-1ID5FS-QD-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"
+162,14022,OLSW-3DR-DC,"Selected wardrobe internal 3DOLSW-R-1ID5FS-QD-DC Width is 2700, Which is outside the allowable limits (Min = 2701, Max = 3000)"
+35,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-L-3FS2RS1HR1HV-DC Height is 2370, Which is outside the allowable limits (Min = 2100, Max = 2100)"
+24,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-L-1ID1LK2FS2RS1HR1HV-DC Width is 2350, Which is outside the allowable limits (Min = 1500, Max = 1800)"
+28,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-L-2FS3RS1HR1FV-DC Height is 2370, Which is outside the allowable limits (Min = 2100, Max = 2100)"
+71,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-R-3FS2RS1HR1HV-DC Height is 2370, Which is outside the allowable limits (Min = 2100, Max = 2100)"
+65,14021,OLSW-2DR-LSE-DC,"Selected wardrobe internal 2DOLSW-R-2FS3RS1HR1FV-DC Height is 2370, Which is outside the allowable limits (Min = 2100, Max = 2100)"

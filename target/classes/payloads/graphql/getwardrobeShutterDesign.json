@@ -1,0 +1,8 @@
+{
+  "query": "query getWardrobeShutterDesigns($moduleId: Int!, $categoryId: Int, $subCategoryId: Int, $dimension: String, $cityId: Int!) {\n  getWardrobeShutterDesigns(moduleId: $moduleId, categoryId: $categoryId, subCategoryId: $subCategoryId, dimension: $dimension, cityId: $cityId) {\n    __typename\n    finishCategory\n    finishType\n    finishSubType\n    designName\n    shutterImage\n    wardrobeShutterType\n    shutterData {\n      id\n      name\n      applicableSection\n      designID\n      designName\n      subDesignID\n      subDesignName\n      hasHandle\n      __typename\n    }\n    familyIds\n  }\n}\n",
+  "variables": {
+    "moduleId": "13737",
+    "dimension": "1200 X 560 X 2400",
+    "cityId": 10001
+  }
+}

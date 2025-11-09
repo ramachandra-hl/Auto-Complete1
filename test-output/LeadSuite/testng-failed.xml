@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LeadSuite]">
+  <test thread-count="5" name="LeadTest(failed)">
+    <classes>
+      <class name="test.LeadCreationTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterClassTasks"/>
+          <include name="afterMethod"/>
+          <include name="setUp"/>
+          <include name="testCreateBulkLeads"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- test.LeadCreationTest -->
+    </classes>
+  </test> <!-- LeadTest(failed) -->
+</suite> <!-- Failed suite [LeadSuite] -->

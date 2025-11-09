@@ -1,0 +1,19 @@
+{
+  "operationName": "getWardrobeMaterials",
+  "variables": {
+    "cityId": 10001,
+    "categoryId": 10015,
+    "subCategoryId": 10107,
+    "moduleId": 13053,
+    "finishId": "",
+    "xpDoowupInHL": true,
+    "orderProfileType": "DC",
+    "priceVersion": "10109",
+    "paymentStage": 0,
+    "projectCreationDate": 1752307805410,
+    "isElemental": false,
+    "elementalType": "",
+    "orderBookingDate": null
+  },
+  "query": "query getWardrobeMaterials($categoryId: Int!, $subCategoryId: Int!, $moduleId: Int!, $cityId: Int!, $finishId: String, $xpDoowupInHL: Boolean!, $orderProfileType: OrderProfileType!, $priceVersion: Int!, $paymentStage: Int, $projectCreationDate: String, $isElemental: Boolean, $elementalType: String, $orderBookingDate: String) {\n  getWardrobeMaterial(categoryId: $categoryId, subCategoryId: $subCategoryId, moduleId: $moduleId, cityId: $cityId, finishId: $finishId, xpDoowupInHL: $xpDoowupInHL, orderProfileType: $orderProfileType, priceVersion: $priceVersion, paymentStage: $paymentStage, projectCreationDate: $projectCreationDate, isElemental: $isElemental, elementalType: $elementalType, orderBookingDate: $orderBookingDate) {\n    woodenMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      shutterDesignType\n      shutterFinishType\n      shutterFinishCategory\n      shutterColour {\n        finishGroup\n        __typename\n      }\n      __typename\n    }\n    frameMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      shutterDesignType\n      shutterFinishCategory\n      __typename\n    }\n    visibleSideMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      shutterDesignType\n      shutterFinishCategory\n      orderProfileTypes\n      __typename\n    }\n    multiPartShutterMaterials {\n      shutterFinishCode\n      shutterFinishName\n      shutterCoreName\n      shutterCoreCode\n      shutterDesignType\n      shutterFinishCategory\n      minWidth\n      maxWidth\n      minHeight\n      maxHeight\n      __typename\n    }\n    glassMaterials {\n      type\n      materialId\n      isMirror\n      finishId\n      __typename\n    }\n    infillShutterMaterial {\n      shutterName\n      shutterId\n      infillMaterials {\n        shutterCoreCode\n        shutterCoreName\n        shutterFinishCode\n        shutterFinishName\n        shutterCategory\n        orderProfileTypes\n        shutterDesignType\n        shutterFinishType\n        shutterFinishCategory\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

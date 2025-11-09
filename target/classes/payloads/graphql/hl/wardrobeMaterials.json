@@ -1,0 +1,19 @@
+{
+  "operationName": "getWardrobeMaterials",
+  "variables": {
+    "cityId": 10001,
+    "categoryId": 10003,
+    "subCategoryId": 10077,
+    "moduleId": 12766,
+    "finishId": "",
+    "xpDoowupInHL": true,
+    "orderProfileType": "HOMELANE",
+    "priceVersion": "10104",
+    "paymentStage": 0,
+    "projectCreationDate": 1743005981089,
+    "isElemental": false,
+    "elementalType": "",
+    "orderBookingDate": null
+  },
+  "query": "query getWardrobeMaterials($categoryId: Int!, $subCategoryId: Int!, $moduleId: Int!, $cityId: Int!, $finishId: String, $xpDoowupInHL: Boolean!, $orderProfileType: OrderProfileType!, $priceVersion: Int!, $paymentStage: Int, $projectCreationDate: String, $isElemental: Boolean, $elementalType: String, $orderBookingDate: String) {\n  getWardrobeMaterial(categoryId: $categoryId, subCategoryId: $subCategoryId, moduleId: $moduleId, cityId: $cityId, finishId: $finishId, xpDoowupInHL: $xpDoowupInHL, orderProfileType: $orderProfileType, priceVersion: $priceVersion, paymentStage: $paymentStage, projectCreationDate: $projectCreationDate, isElemental: $isElemental, elementalType: $elementalType, orderBookingDate: $orderBookingDate) {\n    woodenMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    frameMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    visibleSideMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    multiPartShutterMaterials {\n      shutterFinishCode\n      shutterFinishName\n      shutterCoreName\n      shutterCoreCode\n      minWidth\n      maxWidth\n      minHeight\n      maxHeight\n      __typename\n    }\n    glassMaterials {\n      type\n      materialId\n      isMirror\n      finishId\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

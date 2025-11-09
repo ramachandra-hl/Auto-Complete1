@@ -1,0 +1,4 @@
+s.no,moduleId,moduleName,errorMessage
+886,14194,HL-HBHB-KS-DC,"Base price for MULTI CORNER BRACKET MCB7 hardware was not found"
+885,14193,HL-HBHB-QS-DC,"Base price for MULTI CORNER BRACKET MCB7 hardware was not found"
+857,14163,Partition Jaali Frame-DC,"Selected Shutter dimensions are not applicable with the choosen Design or Subdesign, Applicable range: WIDTH [450-600], HEIGHT [698-2100], Check Partition Jaali"

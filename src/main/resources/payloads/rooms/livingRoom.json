@@ -1,0 +1,265 @@
+{
+  "area": 250025,
+  "roomType": "Livingroom",
+  "loc": {
+    "x": 125.36095023671248,
+    "y": 262.5556780010415,
+    "s": false
+  },
+  "breadth": 500,
+  "length": 500.05,
+  "category": "RoomNode",
+  "isSuggested": 0,
+  "suggestedRoomType": "null",
+  "fill": "#FFF7EF",
+  "key": "4381a1f6b685da70f11afc0969cdf924",
+  "walls": [
+    {
+      "key": "571221c509a624ef4b0324ef12b50d2b",
+      "caption": "wall A",
+      "category": "WallGroup",
+      "wallType": "BRICK",
+      "url": null,
+      "color": "#979797",
+      "length": 10000,
+      "wallHeight": 3000,
+      "width": null,
+      "thickness": 100,
+      "isGroup": true,
+      "isDivider": false,
+      "startPoint": {
+        "className": "go.Point",
+        "x": 2457.21900473425,
+        "y": 5201.11356002083
+      },
+      "endPoint": {
+        "className": "go.Point",
+        "x": 12557.21900473425,
+        "y": 5201.11356002083
+      },
+      "smpt1": {
+        "className": "go.Point",
+        "x": 2507.21900473425,
+        "y": 5251.11356002083
+      },
+      "smpt2": {
+        "className": "go.Point",
+        "x": 2407.21900473425,
+        "y": 5151.11356002083
+      },
+      "empt1": {
+        "className": "go.Point",
+        "x": 12507.21900473425,
+        "y": 5251.11356002083
+      },
+      "empt2": {
+        "className": "go.Point",
+        "x": 12607.21900473425,
+        "y": 5151.11356002083
+      },
+      "minLocation": {
+        "className": "go.Point",
+        "x": "NaN",
+        "y": "-9e9999"
+      },
+      "maxLocation": {
+        "className": "go.Point",
+        "x": "NaN",
+        "y": "9e9999"
+      }
+    },
+    {
+      "key": "9374f6477b5558bb47c0cd7b07336ec3",
+      "caption": "wall D",
+      "category": "WallGroup",
+      "wallType": "BRICK",
+      "url": null,
+      "color": "#979797",
+      "length": 10000,
+      "wallHeight": 3000,
+      "width": null,
+      "thickness": 100,
+      "isGroup": true,
+      "isDivider": false,
+      "startPoint": {
+        "className": "go.Point",
+        "x": 2457.21900473425,
+        "y": 15302.113560020829
+      },
+      "endPoint": {
+        "className": "go.Point",
+        "x": 2457.21900473425,
+        "y": 5201.11356002083
+      },
+      "smpt1": {
+        "className": "go.Point",
+        "x": 2507.2190047342497,
+        "y": 15252.113560020829
+      },
+      "smpt2": {
+        "className": "go.Point",
+        "x": 2407.21900473425,
+        "y": 15352.113560020829
+      },
+      "empt1": {
+        "className": "go.Point",
+        "x": 2507.21900473425,
+        "y": 5251.11356002083
+      },
+      "empt2": {
+        "className": "go.Point",
+        "x": 2407.21900473425,
+        "y": 5151.11356002083
+      },
+      "minLocation": {
+        "className": "go.Point",
+        "x": "-9e9999",
+        "y": "NaN"
+      },
+      "maxLocation": {
+        "className": "go.Point",
+        "x": "9e9999",
+        "y": "NaN"
+      }
+    },
+    {
+      "key": "037f58493c00e31e0adceebc2f8129a9",
+      "caption": "wall C",
+      "category": "WallGroup",
+      "wallType": "BRICK",
+      "url": null,
+      "color": "#979797",
+      "length": 10000,
+      "wallHeight": 3000,
+      "width": null,
+      "thickness": 100,
+      "isGroup": true,
+      "isDivider": false,
+      "startPoint": {
+        "className": "go.Point",
+        "x": 12557.21900473425,
+        "y": 15302.113560020829
+      },
+      "endPoint": {
+        "className": "go.Point",
+        "x": 2457.21900473425,
+        "y": 15302.113560020829
+      },
+      "smpt1": {
+        "className": "go.Point",
+        "x": 12507.21900473425,
+        "y": 15252.113560020829
+      },
+      "smpt2": {
+        "className": "go.Point",
+        "x": 12607.21900473425,
+        "y": 15352.113560020829
+      },
+      "empt1": {
+        "className": "go.Point",
+        "x": 2507.2190047342497,
+        "y": 15252.113560020829
+      },
+      "empt2": {
+        "className": "go.Point",
+        "x": 2407.21900473425,
+        "y": 15352.113560020829
+      },
+      "minLocation": {
+        "className": "go.Point",
+        "x": "NaN",
+        "y": "-9e9999"
+      },
+      "maxLocation": {
+        "className": "go.Point",
+        "x": "NaN",
+        "y": "9e9999"
+      }
+    },
+    {
+      "key": "ffbcabe0066bf20b344dce4ead5ea7fb",
+      "caption": "wall B",
+      "category": "WallGroup",
+      "wallType": "BRICK",
+      "url": null,
+      "color": "#979797",
+      "length": 10000,
+      "wallHeight": 3000,
+      "width": null,
+      "thickness": 100,
+      "isGroup": true,
+      "isDivider": false,
+      "startPoint": {
+        "className": "go.Point",
+        "x": 12557.21900473425,
+        "y": 5201.11356002083
+      },
+      "endPoint": {
+        "className": "go.Point",
+        "x": 12557.21900473425,
+        "y": 15302.113560020829
+      },
+      "smpt1": {
+        "className": "go.Point",
+        "x": 12507.21900473425,
+        "y": 5251.11356002083
+      },
+      "smpt2": {
+        "className": "go.Point",
+        "x": 12607.21900473425,
+        "y": 5151.11356002083
+      },
+      "empt1": {
+        "className": "go.Point",
+        "x": 12507.21900473425,
+        "y": 15252.113560020829
+      },
+      "empt2": {
+        "className": "go.Point",
+        "x": 12607.21900473425,
+        "y": 15352.113560020829
+      },
+      "minLocation": {
+        "className": "go.Point",
+        "x": "-9e9999",
+        "y": "NaN"
+      },
+      "maxLocation": {
+        "className": "go.Point",
+        "x": "9e9999",
+        "y": "NaN"
+      }
+    }
+  ],
+  "boundaryWalls": [
+    {
+      "direction": 1,
+      "key": "571221c509a624ef4b0324ef12b50d2b"
+    },
+    {
+      "direction": 1,
+      "key": "9374f6477b5558bb47c0cd7b07336ec3"
+    },
+    {
+      "direction": 1,
+      "key": "037f58493c00e31e0adceebc2f8129a9"
+    },
+    {
+      "direction": 1,
+      "key": "ffbcabe0066bf20b344dce4ead5ea7fb"
+    }
+  ],
+  "assets": [],
+  "name": "Livingroom",
+  "isSelected": false,
+  "fixture": {
+    "roomFixtures": {},
+    "wallParts": {
+      "doors": {},
+      "windows": {}
+    }
+  },
+  "id": "4381a1f6b685da70f11afc0969cdf924",
+  "isDoowUp": false,
+  "roomShape": "Rect-0"
+}

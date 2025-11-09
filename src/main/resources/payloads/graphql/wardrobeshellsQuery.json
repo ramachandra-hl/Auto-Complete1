@@ -1,0 +1,15 @@
+{
+  "operationName": "getWardrobeShellsQuery",
+  "variables": {
+    "width": "900",
+    "height": "2250",
+    "depth": "560",
+    "wardrobeType": "Hinged Wardrobe",
+    "categoryId": 10003,
+    "subCategoryId": 10077,
+    "cityId": 10001,
+    "projectCreationDate": "1743005981089",
+    "orderProfileType": "HOMELANE"
+  },
+  "query": "query getWardrobeShellsQuery($width: Int!, $depth: Int!, $height: Int!, $wardrobeType: String!, $shutterType: String, $categoryId: Int!, $subCategoryId: Int!, $cityId: Int!, $projectCreationDate: String, $orderProfileType: orderProfileType!) {\n  getWardrobeModules(width: $width, depth: $depth, height: $height, wardrobeType: $wardrobeType, shutterType: $shutterType, categoryId: $categoryId, subCategoryId: $subCategoryId, cityId: $cityId, projectCreationDate: $projectCreationDate, orderProfileType: $orderProfileType) {\n    nucleusModuleId\n    moduleName\n    moduleImage\n    applicableSections\n    moduleDimension {\n      dimensionId\n      dimensionName\n      width\n      depth\n      height\n      __typename\n    }\n    offsets {\n      moduleId\n      section\n      width\n      depth\n      height\n      offsetX\n      offsetY\n      offsetZ\n      __typename\n    }\n    __typename\n  }\n}\n"
+}

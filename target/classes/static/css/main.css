@@ -1,0 +1,320 @@
+  body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(
+                                         rgba(255, 255, 255, 0.4),
+                                         rgba(255, 255, 255, 0.4)
+                                      ),
+                                      url('../images/Homelane&DesignCafe.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Nav Links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ text-transform: uppercase;
+     font-size: 22px;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    opacity: 0.8;
+  }
+
+  nav a.active {
+    border-bottom: 2px solid white;
+  }
+
+  /* Content area */
+  #content {
+    overflow : hidden;
+    padding-top:10px;
+    min-height: 80vh;
+  }
+
+  /* roster css */
+
+  .body{
+      margin-top: 0px;
+  }
+          .container {
+              max-width:700px;
+              min-height:550px;
+              margin: 30px auto;
+              margin-top: 5%;
+              padding: 20px 30px;
+              background: rgba(255, 255, 255, 0.1);
+              border-radius: 18px;
+              border: 1.2px solid rgba(255, 255, 255, 0.4);
+              box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+              overflow: hidden;
+
+          }
+
+          .form-group{
+              height: 280px;
+              display:flex;
+              justify-content:center;
+              }
+
+          .field {
+              margin-bottom: 15px;
+              height:200px;
+              width:350px;
+          }
+
+          h1 {
+              text-align: center;
+              font-size: 26px;
+              color: #ff6b6b;
+              text-shadow: 1px 1px 2px rgba(255,107,107,0.6);
+          }
+
+          label {
+              display: block;
+              margin-top: 15px;
+              font-weight: 600;
+              font-size: 13.5px;
+              line-height:15px;
+              color: #2b2b2b;
+              margin-left:40px;
+              padding-bottom:5px;
+          }
+
+          input{
+              width:70%;
+              margin-left:40px;
+              }
+
+          input[type="text"],input[type = "file"],input[type = "number"], select {
+              width: 70%;
+              padding: 8px 10px;
+              border-radius: 8px;
+              border: 1px solid rgba(255, 255, 255, 0.4);
+              background-color: rgba(255,255,255,0.7);
+              font-size: 13px;
+              color: #2b2b2b;
+              margin-left:40px;
+          }
+
+          input:focus, select:focus {
+              border: 1.5px solid #4A90E2;
+              box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+              outline: none;
+              background-color: rgba(255,255,255,0.9);
+          }
+
+    .buttons, #add-property {
+          margin-top: 20px;
+          text-align: center;
+      }
+
+      .buttons button {
+          padding: 10px 20px;
+          margin: 0 10px;
+          border: none;
+          border-radius: 6px;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+
+     .run-btn {
+         background: grey;
+         color: white;
+         border: none;
+         border-radius: 8px;
+         padding: 10px 20px;
+         font-size: 15px;
+         cursor: not-allowed;
+         transition: all 0.3s ease;
+     }
+
+     .run-btn.active {
+         background: #007bff; /* blue */
+         cursor: pointer;
+     }
+
+     .run-btn.running {
+         background: orange;
+         cursor: wait;
+     }
+
+     .run-btn.success {
+         background: #ff6bcb; /* pink */
+     }
+
+
+      .clear-btn {
+          background: #6c757d;
+      }
+  #responseContainer {
+      margin-top: 20px;
+      padding-left: 15px;
+      border-radius: 8px;
+      line-height: 1.5;
+      background-color: #f8f9fa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 14px;
+      max-height: 100px;           /* Limit height */
+      overflow-y: auto;            /* Enable vertical scroll */
+      overflow-x: auto;            /* Enable horizontal scroll (for long URLs) */
+      word-wrap: break-word;       /* Wrap long words */
+      box-sizing: border-box;
+  }
+
+  #responseContainer a {
+      color: #007bff;
+      text-decoration: none;
+      word-break: break-all;
+  }
+  .response-item {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+
+  #responseContainer a:hover {
+      text-decoration: underline;
+  }
+
+  #responseContainer hr {
+      border: none;
+      border-top: 1px solid #ddd;
+  }
+
+
+  /* scpro  */
+
+  /* === CSV Preview === */
+  #csv-preview {
+     margin-top:40px;
+      background: #f8f9fa;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow-x: auto;
+      max-height: 250px;
+  }
+
+  /* === Table === */
+  .csv-table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+  }
+  .csv-table th, .csv-table td {
+      border: 1px solid #ccc;
+      padding: 6px 8px;
+      text-align: left;
+  }
+  .csv-table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+  }
+
+  /* === Modal === */
+  #popup-modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+  }
+  .popup-content {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  }
+  #popup-modal h3 {
+      margin-bottom: 10px;
+  }
+  #close-popup {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+
+  /* === Property Row: dropdown + delete beside each other === */
+  .property-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  /* align remove button neatly beside dropdown */
+  .property-row .remove-btn {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 6px 10px;
+    background-color: #dc3545 !important;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .property-row .remove-btn:hover {
+    background-color: #b71c1c !important;
+  }
+
+/* */
+
+/* === Buttons === */
+.btn-small {
+    padding: 6px 10px;
+    margin-top: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.btn-small:hover { background-color: #0056b3; }
+
+#property-row{
+margin-top:40px;
+}
+
+input#projectId, #csv-file {
+    width: 470px;
+}

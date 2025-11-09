@@ -1,0 +1,12 @@
+{
+  "operationName": "getMultiPartShutter",
+  "variables": {
+    "moduleId": "12766",
+    "applicableSection": "",
+    "dimension": "900 X 560 X 2250",
+    "cityId": 10001,
+    "categoryId": 10003,
+    "subCategoryId": 10077
+  },
+  "query": "query getMultiPartShutter($moduleId: Int!, $applicableSection: String!, $dimension: String, $cityId: Int!, $categoryId: Int, $subCategoryId: Int) {\n  getMultiPartShutter(moduleId: $moduleId, applicableSection: $applicableSection, dimension: $dimension, cityId: $cityId, categoryId: $categoryId, subCategoryId: $subCategoryId) {\n    shutterId\n    name\n    description\n    modelId\n    imageUrl\n    category\n    __typename\n  }\n}\n"
+}

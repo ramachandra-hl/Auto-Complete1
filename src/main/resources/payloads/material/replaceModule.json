@@ -1,0 +1,15 @@
+{
+  "moduleObjectId": "4d2e28d9-56fb-401f-8a72-7f72a5ff00b9-0",
+  "newModuleId": 12745,
+  "categoryId": 10003,
+  "subCategoryId": 10001,
+  "isGola": true,
+  "internals": [
+    {
+      "internalId": 10372,
+      "section": "MID",
+      "dimension": "1200 X 560 X 2250"
+    }
+  ],
+  "profileType": null
+}

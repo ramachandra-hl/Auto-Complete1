@@ -1,0 +1,4 @@
+s.no,moduleId,moduleName,errorMessage
+22,13738,HW1ED-2S-S-DC,"Selected Width is 1200, Which is outside the allowable limits (Min = 800, Max = 900)"
+23,13739,HW2ED-2S-S-DC,"CabinetShade is not valid or not a cabinet colour"
+25,13739,HW2ED-2S-S-DC,"CabinetShade is not valid or not a cabinet colour"

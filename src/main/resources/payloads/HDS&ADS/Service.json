@@ -1,0 +1,32 @@
+{
+  "remainingServicesQuoteData": {
+    "hdsId": "SER-01-1504",
+    "length": 1000,
+    "breadth": 1000,
+    "quantity": 1,
+    "name": "Concrete Block Wall Construction with both side cement plastering: 100mm thk (Project Level Costing)",
+    "category": "Civil",
+    "categoryId": "CIVIL",
+    "subCategory": "Wall Construction",
+    "subCategoryId": "863",
+    "hasLength": true,
+    "hasBreadth": true,
+    "hasHeight": false,
+    "hasQuantity": false,
+    "haveTx": false,
+    "isCoveLighting": false,
+    "imageUrl": "https://www.homelanestore.com/media/catalog/product/s/e/ser-01-1504_pkohrvkyk06tqg2v.jpg"
+  },
+  "hdsServiceData": {
+    "objectId": null,
+    "projectId": "1b6a9c2b-9eed-4b77-8534-55315e39a240",
+    "floorId": "f40d9ba0-6244-4281-9072-06936198ca66",
+    "roomId": "6717f0fa923ff89a345a3d42825818b6",
+    "unitEntryId": "",
+    "wallId": "",
+    "visualEntity": {},
+    "hasScVisuals": false,
+    "visibility": true,
+    "serviceType": "BESPOKE"
+  }
+}

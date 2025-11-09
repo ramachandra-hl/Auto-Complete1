@@ -1,0 +1,22 @@
+s.no,Room Type,Room Name,Furniture Type,categoryName,CategoryID,subCategoryName,SubCategoryID,modulename,ModuleId,width,depth,height,AliasName,skirting type,skirting height,skirtingModuleId,internalId,section,accessoryCode
+17,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,,10200,900,560,2100,DEFAULT1234561244211,,,,13508,MID,10201
+1,Kitchen,Kitchen,Fitted Furniture,Miscelleneous,10007,Partition System,10023,Shoji Jaali Triangular,10681,600,44,2100,DEFAULT1730961471877,inline/inset,100,12734,111,,
+2,Kitchen,Kitchen,Fitted Furniture,Miscelleneous,10007,Partition System,10023,Shoji Jaali Clover,10684,600,44,2100,DEFAULT1730961471877,,120,,,,
+3,Kitchen,Kitchen,Fitted Furniture,Kitchen,10001,Floor Standing,10011,Hob Cabinet 1 Shutter-Version 1,12241,600,560,550,STORAGE1730962123479,,,,,,
+4,Kitchen,Kitchen,Fitted Furniture,Kitchen,10001,Floor Standing,10011,Sink Unit 1 Shutter With Bottom-Version 1,12295,500,500,550,STORAGE1730962249702,,,,,,
+5,Kitchen,Kitchen,Fitted Furniture,Kitchen,10001,Floor Standing,10011,Sink Base Blind Corner 1 Shutter - Right-Version 1,12301,1050,560,550,CORNER1730962694479,,,,,,
+6,Kitchen,Kitchen,Fitted Furniture,Loft,10006,Box Loft,10013,Loft Box Loft-2 Shutter,10386,,,,DEFAULT1730962975326,,,,,,
+7,Kitchen,Kitchen,Fitted Furniture,Loft,10006,Frame and Shutter,10014,Loft Frame and Shutter-1S,10381,300,100,400,DEFAULT1730963357975,,,,,,
+8,Kitchen,Kitchen,Fitted Furniture,Storage,10005,Floor Standing Utility Unit,10031,Base Blind Corner Module 1 Shutter - Left,10027,,,,DEFAULT1730963601008,,,,,,
+9,Kitchen,Kitchen,Fitted Furniture,Storage,10005,Pooja Unit,10028,Base 1 Drawer 1 Open -560D,10354,400,560,510,,,,,,,
+10,LivingRoom,LivingRoom,Fitted Furniture,Miscelleneous,10007,Book Shelf,10019,Base 1 Shutter -Upto 710H,10310,300,330,510,DEFAULT1730964267941,,,,,,
+11,LivingRoom,LivingRoom,Fitted Furniture,Miscelleneous,10007,Bedside Table,10018,Gola Other Module Base 2 Drawer-430D,11192,400,430,510,DEFAULT1730964667770,,,,,,
+12,LivingRoom,LivingRoom,Fitted Furniture,Miscelleneous,10007,Chest of Drawer,10020,,10369,400,710,430,DEFAULT1730964904190,,,,,,
+13,LivingRoom,LivingRoom,Fitted Furniture,Miscelleneous,10007,Window Seating,10022,Base 2 Shutter -Uto 710H,10312,650,330,510,DEFAULT1730965314482,,,,,,
+14,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Versa Hinge Wardrobe,10077,Versa Wardrobe,10630,1000,430,2100,,,,,,,
+15,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Versa Floor-to-Ceiling,10100,VERSA ARMADIO SHELL 3,12650,1000,490,2100,,,,,15041,LEFT,
+16,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Floor-to-Ceiling,10038,ARMADIO SHELL 6 - 7FT-L-CORNER,11275,900,490,2100,DEFAULT1730969019044,,,,,,
+17,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,,10200,900,560,2100,DEFAULT1234561244211,,,,13508,MID,10201
+18,LivingRoom,LivingRoom,Fitted Furniture,Wardrobe,10003,Hinged,10001,,10192,600,300,2100,DEFAULT1234561244211,,,,,,
+19,LivingRoom,LivingRoom,Fitted Furniture,Storage,10005,Study Unit,10029,,11106,1200,450,760,DEFAULT1730969716652,,,,,,
+20,,,,,,,,,,,,,,,,,,,

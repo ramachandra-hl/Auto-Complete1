@@ -1,0 +1,18 @@
+{
+  "zoneType": "STORAGE",
+  "zoneName": "STORAGE1743497598331",
+  "categoryId": "10001",
+  "subCategoryId": "10011",
+  "categoryName": "Kitchen",
+  "subCategoryName": "Floor Standing",
+  "position": {
+    "x": 63369,
+    "y": 0,
+    "z": 5513
+  },
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

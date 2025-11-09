@@ -1,0 +1,48 @@
+# =============================
+# 💼 Lead Creation – Time Configurations
+# -----------------------------
+# Purpose: Create leads with dynamic data (mobile/email/customer info).
+
+✅ Set `leadCount` to the number of leads you want to generate.
+✅ `lastExecutionCount` is auto-managed. Update it only if necessary, e.g.,
+   - When lead(s) already exist with the mobile number.
+   - In that case, set it to `previous lastExecutionCount + leadCount`.
+   - Ensure it always stays less than 100.
+
+✅ Update `cityId` / `cityCode` based on the target customer’s city.
+✅ Change `customerGmailStartingPrefix` or `mobileNoPrefix` if you need a different format.
+✅ Set `projectEnvironment` to either `'preProd'` or `'prod'` as per execution needs.
+
+=============================
+🏙️ City ID Mapping (Reference)
+-----------------------------
+
+Use the following city ID mappings when setting `cityId` for lead creation or module assignment:
+
+Chennai=2, Mumbai=3, Kolkata=4, Kochi=5, Visakhapatnam=6, Delhi=7, Hyderabad=8, Gurugram=9, Gurgaon=9, Pune=10,
+Thane=11, Lucknow=12, Mysore=14, Patna=15, Noida=26, Coimbatore=27, Bhubaneshwar=28, Salem=29, Nagpur=30, Surat=31,
+Ranchi=32, Ghaziabad=33, Nashik=34, Madurai=35, Tiruchirappalli=36, Jaipur=37
+
+
+# =============================
+# 🧱 Module Addition Time Requirement
+# -----------------------------
+Used for adding modules into canvas with specific requirements.
+
+✅ Update projectID for working directly on project
+✅ Change modulesInRoom to add maximum modules in particular Room
+✅ Toggle TRUE/FALSE for different module layers as needed for
+isAccessoriesRequired ,isCarcassRequired ,isInternalRequired,isShutterRequired
+
+
+# =============================
+# 📧 Email Configuration
+# -----------------------------
+Used to send final reports to stakeholders after execution.
+
+✅ Modify toEmails / ccEmails for different recipients
+✅ Customize emailContent and subject per ticket
+✅ Change senderEmail only if using a different Gmail account
+
+# Script run tracking date  (auto-updated after execution)
+leadScriptRunDate=12-07-2025

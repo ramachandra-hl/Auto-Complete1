@@ -1,0 +1,30 @@
+S.no,Room Type,ModuleId,modulename,width,depth,height,internalId,Internal Name,Description,internalWidth,internalDepth,internalHeight
+,LivingRoom,12744,HW4ED-1S-S,600,400,2100,15289,HW4ED1FS2RS-1S-400D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -1Shutter-400D,400,400,2100
+,LivingRoom,12744,HW4ED-1S-S,600,450,2100,15290,HW4ED1FS2RS-1S-450D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -1Shutter-450D,400,450,2100
+,LivingRoom,12744,HW4ED-1S-S,600,500,2100,15291,HW4ED1FS2RS-1S-500D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -1Shutter-500D,400,500,2100
+,LivingRoom,12747,HW2ED-2S-S,900,400,2100,15292,HW2ED2FS2RS-2S-400D-S,Hinged wardrobe 2 External Drawer 2 fixed shelf 2 Removable Shelves - 2 shutter-400D,800,400,2100
+,LivingRoom,12747,HW2ED-2S-S,900,450,2100,15293,HW2ED2FS2RS-2S-450D-S,Hinged wardrobe 2 External Drawer 2 fixed shelf 2 Removable Shelves - 2 shutter-450D,800,450,2100
+,LivingRoom,12748,HW3ED-2S-S,900,400,2100,15294,HW3ED2FS2RS-2S-400D-S,Hinged Wardrobe 3 External Drawer 2 Fixed shelf 2 Removable shelves - 2 Shutter-400D,800,400,2100
+,LivingRoom,12748,HW3ED-2S-S,900,450,2100,15295,HW3ED2FS2RS-2S-450D-S,Hinged Wardrobe 3 External Drawer 2 Fixed shelf 2 Removable shelves - 2 Shutter-450D,800,450,2100
+,LivingRoom,12748,HW3ED-2S-S,900,500,2100,15296,HW3ED2FS2RS-2S-500D-S,Hinged Wardrobe 3 External Drawer 2 Fixed shelf 2 Removable shelves - 2 Shutter-500D,800,500,2100
+,LivingRoom,12749,HW4ED-2S-S,900,400,2100,15297,HW4ED1FS2RS-2S-400D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -2Shutter-400D,800,400,2100
+,LivingRoom,12749,HW4ED-2S-S,900,450,2100,15298,HW4ED1FS2RS-2S-450D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -2Shutter-450D,800,450,2100
+,LivingRoom,12749,HW4ED-2S-S,900,500,2100,15299,HW4ED1FS2RS-2S-500D-S,Hinged Wardrobe 4 External Drawer 1 Fixed Shelf 2 Removable shelf -2Shutter-500D,800,500,2100
+,LivingRoom,12742,HW2ED-1S-S,600,560,1950,15300,HW2ED1FS1HR-1S-S,Hinged Wardrobe 2 External Drawer 1 Fixed Shelf 1 Hanger Rod -1Shutter,564,560,1950
+,LivingRoom,12747,HW2ED-2S-S,900,560,1800,15301,HW2ED1FS1HR-2S-S,Hinged Wardrobe 2 External Drawer 1 Fixed Shelves 1 Hanger Rod -2 Shutter,864,560,1800
+,LivingRoom,12748,HW3ED-2S-S,900,560,1800,15302,HW3ED1FS1HR-2S-S,Hinged Wardrobe 3 External Drawer 1 Fixed Shelves 1 Hanger Rod -2 Shutter,864,560,1800
+,LivingRoom,12750,HW2SED-2S-S,1200,560,2100,15303,HW2ED1ID3FS2RS1HR-2S-S,Hinged Wardrobe 2 External Drawer 1 Internal Drawer 3 Fixed Shelf 2 Removable Shelf 1 Hanger Rod - 2 Shutter,900,560,2100
+,LivingRoom,12750,HW2SED-2S-S,1200,560,2100,15304,HW2ED3FS2RS1HR-2S-S,Hinged Wardrobe 2 External Drawer 3 Fixed Shelf 2 Removable Shelf 1 Hanger Rod - 2 Shutter,900,560,2100
+,LivingRoom,12747,HW2ED-2S-S,900,500,2100,15305,HW2ED2FS2RS-2S-500D-S,Hinged wardrobe 2 External Drawer 2 fixed shelf 2 Removable Shelves - 2 shutter-500D,800,500,2100
+,DeckoLivingRoom,12783,D-HW2ED-2S-S,900,560,2100,15306,DW-HW2ED2FS2RS1HR-2S-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf 1 Hanger Rod -2Shutter,900,560,2100
+,DeckoLivingRoom,12783,D-HW2ED-2S-S,900,560,2100,15307,DW-HW2ED2FS2RS1HR-2S-D1-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf 1 Hanger Rod -2Shutter-D1,900,560,2100
+,DeckoLivingRoom,12786,D-HW2ED-1S-S,600,560,2100,15308,DW-HW2ED2FS2RS1HR-1S-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf 1 Hanger Rod -1Shutter,450,560,2100
+,DeckoLivingRoom,12786,D-HW2ED-1S-S,600,560,2100,15309,DW-HW2ED2FS2RS1HR-1S-D1-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf 1 Hanger Rod -1Shutter-D1,450,560,2100
+,DeckoLivingRoom,12783,D-HW2ED-2S-S,900,430,2100,15310,DW-HW2ED2FS2RS-2S-430D-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf - 2Shutter-430D,900,430,2100
+,DeckoLivingRoom,12786,D-HW2ED-1S-S,600,430,2100,15311,DW-HW2ED2FS2RS-1S-430D-S,Doowup Hinged Wardrobe 2 External Drawer 2 Fixed Shelf 2 Removable Shelf - 1Shutter-430D,450,430,2100
+,DeckoLivingRoom,12798,D-HW-OT3ED1FS3RS-S,900,330,2100,15322,DW-HW-OT3ED-300D-S,Doowup Hinged Wardrobe-Open Tall Unit with 3 External Drawer 1 Fixed shelf 3 Removable Shelf-300D,600,330,2100
+,DeckoLivingRoom,12798,D-HW-OT3ED1FS3RS-S,900,435,2100,15323,DW-HW-OT3ED-400D-S,Doowup Hinged Wardrobe-Open Tall Unit with 3 External Drawer 1 Fixed shelf 3 Removable Shelf-400D,600,435,2100
+,DeckoLivingRoom,12798,D-HW-OT3ED1FS3RS-S,900,560,2100,15324,DW-HW-OT3ED-500D-S,Doowup Hinged Wardrobe-Open Tall Unit with 3 External Drawer 1 Fixed shelf 3 Removable Shelf-500D,600,560,2100
+,DeckoLivingRoom,12799,D-HW-OT4ED1FS3RS-S,900,330,2100,15325,DW-HW-OT4ED-300D-S,Doowup Hinged Wardrobe-Open Tall Unit with 4 External Drawer 1 Fixed shelf 4 Removable Shelf-300D,600,330,2100
+,DeckoLivingRoom,12799,D-HW-OT4ED1FS3RS-S,900,435,2100,15326,DW-HW-OT4ED-400D-S,Doowup Hinged Wardrobe-Open Tall Unit with 4 External Drawer 1 Fixed shelf 4 Removable Shelf-400D,600,435,2100
+,DeckoLivingRoom,12799,D-HW-OT4ED1FS3RS-S,900,560,2100,15327,DW-HW-OT4ED-500D-S,Doowup Hinged Wardrobe-Open Tall Unit with 4 External Drawer 1 Fixed shelf 4 Removable Shelf-500D,600,560,2100

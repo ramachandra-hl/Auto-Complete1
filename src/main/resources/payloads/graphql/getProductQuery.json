@@ -1,0 +1,12 @@
+{
+  "query": "query getProduct($productId: Int, $subCategoryId: Int!, $city: String!, $productName: String, $selectedFields: [FieldRequest], $catalogProfileType: CatalogProfileType, $cancelledSuborder: Boolean) {\n  getProduct(productId: $productId, subCategoryId: $subCategoryId, city: $city, selectedFields: $selectedFields, fullCatalogScope: true, productName: $productName, filterOnHoldItems: true, catalogProfileType: $catalogProfileType, cancelledSuborder: $cancelledSuborder) {\n    name\n    baseSkuId\n    basePrice\n    name\n    baseImage\n    productId\n    skuList {\n      hlSkuId\n      skuId\n      quantity\n      showQuantity\n      fieldData {\n        fieldName\n        fieldValue\n        __typename\n      }\n      customField {\n        wallCladding {\n          servingArea\n          panelPerBox\n          panelDimension\n          wastagePercentage\n          snappingWidth\n          panelSplit\n          panelOrientation\n          backPanel\n          mirrorPanel\n          panelApplication\n          __typename\n        }\n        __typename\n      }\n      mrp\n      sellingPrice\n      sellingUom\n      imageList\n      skuStatus\n      assetStatus\n      assetDimension\n      installationSku {\n        hlSkuId\n        basePrice\n        __typename\n      }\n      moq\n      categoryMov\n      productName\n      __typename\n    }\n    configurableAttribute {\n      attributeName\n      options {\n        label\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n",
+  "variables": {
+    "productId": null,
+    "city": "bengaluru",
+    "subCategoryId": 240,
+    "selectedFields": [],
+    "productType": "LOOSE_FURNITURE",
+    "catalogProfileType": "HOMELANE",
+    "cancelledSuborder": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "operationName": "getZoneDataQuery",
+  "variables": {
+    "cityId": 10001,
+    "roomType": "Kitchen",
+    "zoneId": "565dec1c-4a58-440d-864b-fdfd92d3d72c",
+    "categoryId": 10001,
+    "subCategoryId": 10011,
+    "moduleIds": [
+      {
+        "moduleId": "12299",
+        "dimension": "1125 X 560 X 750",
+        "selectedShutterDesign": ""
+      }
+    ],
+    "completeData": true,
+    "profileType": "REGULAR",
+    "xpDoowupInHL": true,
+    "orderProfileType": "HOMELANE",
+    "priceVersion": "10106",
+    "paymentStage": 0,
+    "projectCreationDate": 1747978338509,
+    "isElemental": false,
+    "elementalType": "",
+    "orderBookingDate": null
+  },
+  "query": "query getZoneDataQuery($roomType: String!, $zoneId: String!, $categoryId: String!, $subCategoryId: String!, $completeData: Boolean!, $cityId: Int!, $profileType: ProfileType!, $moduleIds: [ModuleWithDimension], $xpDoowupInHL: Boolean!, $orderProfileType: OrderProfileType!, $priceVersion: Int!, $paymentStage: Int, $projectCreationDate: String, $isElemental: Boolean, $elementalType: String, $orderBookingDate: String) {\n  getZoneData(roomType: $roomType, zoneId: $zoneId, subCategoryId: $subCategoryId, categoryId: $categoryId, completeData: $completeData, moduleIds: $moduleIds, profileType: $profileType, cityId: $cityId, xpDoowupInHL: $xpDoowupInHL, orderProfileType: $orderProfileType, priceVersion: $priceVersion, paymentStage: $paymentStage, projectCreationDate: $projectCreationDate, isElemental: $isElemental, elementalType: $elementalType, orderBookingDate: $orderBookingDate) {\n    name\n    imageUrl\n    editable\n    zoneId\n    categoryId\n    counterType\n    graphqlModules {\n      hingeMotion\n      tcMotion\n      hasCounterTop\n      allowNSWidth\n      allowNSDepth\n      allowNSHeight\n      nsWidthStep\n      nsDepthStep\n      nsHeightStep\n      maxDepth\n      maxHeight\n      maxWidth\n      minDepth\n      minHeight\n      minWidth\n      hasMirror\n      hasSkirting\n      shutterOnly\n      cabinetOnly\n      nucleusModuleId\n      wardrobeType\n      assetModuleId\n      applicableSections\n      modelId\n      moduleImage\n      moduleName\n      moduleDimension {\n        dimensionId\n        dimensionName\n        width\n        depth\n        height\n        __typename\n      }\n      partType\n      accessoryCapMin\n      accessoryCapMax\n      cabinetAccesoryCap\n      cabinetAccessories {\n        minQty\n        maxQty\n        addOns {\n          code\n          isEnabled\n          name\n          price\n          __typename\n        }\n        code\n        cutleries {\n          code\n          isEnabled\n          name\n          price\n          __typename\n        }\n        isEnabled\n        name\n        price\n        imageUrl\n        htcMotion\n        htcMake\n        __typename\n      }\n      shuttersWithAccessories {\n        shutterId\n        jaali\n        shutterType\n        name\n        hasGlass\n        hasAluminium\n        allowMirror\n        handlePositions {\n          positionId\n          desc\n          location\n          xOffset\n          yOffset\n          zOffset\n          rotationFromXY\n          rotationInXY\n          forBase\n          forWall\n          forTall\n          __typename\n        }\n        accessories {\n          minQty\n          maxQty\n          addOns {\n            code\n            isEnabled\n            name\n            price\n            imageUrl\n            __typename\n          }\n          code\n          cutleries {\n            code\n            isEnabled\n            name\n            price\n            imageUrl\n            __typename\n          }\n          isEnabled\n          name\n          price\n          imageUrl\n          htcMotion\n          htcMake\n          __typename\n        }\n        familyNotApplicable\n        shutterHeight\n        shutterWidth\n        widthFormula\n        heightFormula\n        allowTopExt\n        maxTopExt\n        allowSideExt\n        maxSideExt\n        allow2SideExt\n        __typename\n      }\n      graphqlShutters {\n        shutterCoreCode\n        shutterCoreName\n        shutterFinishCode\n        shutterFinishName\n        shutterCategory\n        orderProfileTypes\n        __typename\n      }\n      graphqlCarcasses {\n        carcassCode\n        carcassName\n        __typename\n      }\n      graphqlGlassPanels {\n        isGlass\n        epId\n        panelGroup\n        panelName\n        __typename\n      }\n      graphqlExposedPanels {\n        epId\n        panelName\n        panelType\n        meshId\n        isSkirting\n        useShutterFinish\n        hasMirror\n        allowExposed\n        panelGroup\n        __typename\n      }\n      jaaliTypes {\n        shutterCoreCode\n        shutterCoreName\n        shutterFinishCode\n        shutterFinishName\n        __typename\n      }\n      __typename\n    }\n    visibleSideMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    group25Materials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    groupOSLMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    groupBSLMaterials {\n      shutterCoreCode\n      shutterCoreName\n      shutterFinishCode\n      shutterFinishName\n      orderProfileTypes\n      __typename\n    }\n    __typename\n  }\n}\n"
+}
