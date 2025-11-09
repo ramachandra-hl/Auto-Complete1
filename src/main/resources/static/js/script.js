@@ -2,7 +2,9 @@ const links = document.querySelectorAll("nav a");
 const contentDiv = document.getElementById("content");
 let currentScript = null;
 
-// Load page + JS dynamically
+// ==========================================================
+// 🔹 Load Page + Its JS Dynamically
+// ==========================================================
 async function loadPage(page, scriptFile) {
   try {
     console.log(`🔄 Loading page: ${page}`);
@@ -21,20 +23,23 @@ async function loadPage(page, scriptFile) {
       currentScript = null;
     }
 
-    // Wait for DOM to update
-    await new Promise(r => setTimeout(r, 30));
+    // Wait a bit for DOM to settle before adding new JS
+    await new Promise((r) => setTimeout(r, 30));
 
-    // Dynamically add the JS for this page
+    // Add the page's JS dynamically
     const script = document.createElement("script");
     script.src = `/js/${scriptFile}?v=${Date.now()}`;
     script.type = "text/javascript";
 
-    // ✅ Trigger a custom "pageLoaded" event after HTML + JS is ready
     script.onload = () => {
       console.log(`✅ ${scriptFile} executed`);
-      document.dispatchEvent(
-        new CustomEvent("pageLoaded", { detail: { page } })
-      );
+      // ⏱️ Delay event dispatch slightly to ensure the script registered its listeners
+      setTimeout(() => {
+        console.log(`📢 Dispatching pageLoaded event for ${page}`);
+        document.dispatchEvent(
+          new CustomEvent("pageLoaded", { detail: { page } })
+        );
+      }, 100);
     };
 
     script.onerror = () => console.error(`❌ Failed to load ${scriptFile}`);
@@ -47,11 +52,13 @@ async function loadPage(page, scriptFile) {
   }
 }
 
-// Handle navigation clicks
-links.forEach(link => {
-  link.addEventListener("click", e => {
+// ==========================================================
+// 🔹 Handle Navigation
+// ==========================================================
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
-    links.forEach(l => l.classList.remove("active"));
+    links.forEach((l) => l.classList.remove("active"));
     link.classList.add("active");
 
     const page = link.dataset.page;
@@ -61,22 +68,28 @@ links.forEach(link => {
   });
 });
 
-// Handle back/forward
-window.addEventListener("popstate", e => {
+// ==========================================================
+// 🔹 Handle Browser Back / Forward
+// ==========================================================
+window.addEventListener("popstate", (e) => {
   const page = e.state?.page || "roster.html";
   const scriptFile = e.state?.scriptFile || "roster.js";
   loadPage(page, scriptFile);
   setActive(page);
 });
 
-// Highlight correct nav link
+// ==========================================================
+// 🔹 Highlight Active Nav Link
+// ==========================================================
 function setActive(page) {
-  links.forEach(a => {
+  links.forEach((a) => {
     a.classList.toggle("active", a.dataset.page === page);
   });
 }
 
-// Initial page load
+// ==========================================================
+// 🔹 Initial Load
+// ==========================================================
 (function init() {
   const hash = window.location.hash.replace("#", "");
   const page = hash || "roster.html";
