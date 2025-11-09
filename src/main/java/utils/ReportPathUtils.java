@@ -10,8 +10,8 @@ import java.util.Date;
 public class ReportPathUtils {
 
     // 💻 Local and Cloud Fallbacks (same as your config setup)
-    private static final String LOCAL_BASE_FOLDER = System.getProperty("user.home") + "/Documents/AutoQA-Complete";
-    private static final String CLOUD_BASE_FOLDER = System.getProperty("user.home") + "/AutoQA-Complete/input";
+    private static final String LOCAL_BASE_FOLDER = System.getProperty("user.home") + "/Downloads/AutoQA-Complete1";
+    private static final String CLOUD_BASE_FOLDER = System.getProperty("user.home") + "/AutoQA-Complete1/reports";
 
 
 

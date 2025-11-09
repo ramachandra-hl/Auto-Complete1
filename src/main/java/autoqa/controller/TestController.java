@@ -3,13 +3,10 @@ package autoqa.controller;
 import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.*;
 import org.testng.TestNG;
 import utils.Utilities;
@@ -18,6 +15,8 @@ import java.io.*;
 import java.nio.file.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executor;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -32,7 +31,22 @@ public class TestController {
 
     private static final String USER_PROPERTIES_FILE = "userConfigurations.properties";
     private static final String DEFAULT_REPORT_BASE = "reports";
-    private static final String CLOUD_REPORT_BASE = "/mnt/data/AutoQA-Complete/input/reports";
+    private static final Map<String, Map<String, Object>> RUN_STATUS = new ConcurrentHashMap<>();
+
+    private final Executor executor;
+
+    // ==========================================================
+    // ✅ ThreadPool for async execution
+    // ==========================================================
+    public TestController() {
+        ThreadPoolTaskExecutor exec = new ThreadPoolTaskExecutor();
+        exec.setCorePoolSize(2);
+        exec.setMaxPoolSize(4);
+        exec.setQueueCapacity(10);
+        exec.setThreadNamePrefix("AsyncRun-");
+        exec.initialize();
+        this.executor = exec;
+    }
 
     // ==========================================================
     // ✅ Ensure base reports folder exists
@@ -52,9 +66,6 @@ public class TestController {
         }
     }
 
-    // ==========================================================
-    // ✅ Dynamic Base Directory (Local / Railway)
-    // ==========================================================
     private Path getBaseReportsDir() {
         String baseDir = System.getenv("CONFIG_BASE_DIR");
         if (baseDir != null && !baseDir.isEmpty()) {
@@ -82,7 +93,7 @@ public class TestController {
     }
 
     // ==========================================================
-    // ✅ Get all test XMLs
+    // ✅ List available XML test suites
     // ==========================================================
     @GetMapping("/test/suites")
     public ResponseEntity<List<String>> getAllXmlFiles() {
@@ -99,90 +110,45 @@ public class TestController {
         }
     }
 
-
     // ==========================================================
-    // ✅ Run TestNG Suite & Return Reports
+    // ✅ Run Test Suite (Async for Railway)
     // ==========================================================
     @PostMapping("/run")
-    public ResponseEntity<?> runTestSuite(
+    public ResponseEntity<?> runTestSuiteAsync(
             @RequestParam String xmlFile,
             @RequestBody(required = false) List<Map<String, Object>> testData,
             @RequestParam(required = false) Map<String, String> queryParams
     ) {
         try {
-            File xmlFilePath = resolveXmlFile(xmlFile);
-            if (xmlFilePath == null || !xmlFilePath.exists()) {
-                return ResponseEntity.badRequest().body(Map.of(
-                        "status", "error",
-                        "message", "XML file NOT found: " + xmlFile
-                ));
-            }
+            String runId = UUID.randomUUID().toString();
+            RUN_STATUS.put(runId, Map.of(
+                    "status", "running",
+                    "message", "Test execution started",
+                    "startedAt", new Date().toString()
+            ));
 
-            // ✅ Inject test data into system property
-            if (testData != null && !testData.isEmpty()) {
-                String jsonString = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(testData);
-                System.setProperty("testDataJson", jsonString);
-            } else {
-                System.clearProperty("testDataJson");
-            }
-
-            // ✅ Merge user configs
-            Map<String, String> mergedProps = buildEffectiveProps(queryParams);
-            Utilities.updateProperties(USER_PROPERTIES_FILE, mergedProps);
-            String envUsed = mergedProps.getOrDefault("environment", environment);
-
-            // ✅ Run TestNG Suite
-            System.out.println("🧪 Running suite: " + xmlFilePath.getAbsolutePath());
-            TestNG testng = new TestNG();
-            testng.setTestSuites(Collections.singletonList(xmlFilePath.getAbsolutePath()));
-            testng.run();
-
-            // ✅ Identify CSV folders based on XML
-            List<String> generatedCsvFolders = new ArrayList<>();
-            if (xmlFile.equalsIgnoreCase("ModulesWithPriceAndErrorReport.xml")) {
-                generatedCsvFolders = Arrays.asList("ErrorReports", "PriceReports");
-            } else if (xmlFile.equalsIgnoreCase("ApplyInternalsToModuleAndGenerateReports.xml")) {
-                generatedCsvFolders = Collections.singletonList("AllPriceBreakReport");
-            }
-
-            // ✅ Fetch latest reports
-            Map<String, Path> csvMap = findLatestCsvsForFolders(generatedCsvFolders, envUsed);
-            Path latestHtmlReport = getLatestExtentReport();
-
-            // ✅ Build response
-            Map<String, Object> response = new LinkedHashMap<>();
-            response.put("status", "success");
-            response.put("message", "Test completed successfully");
-            response.put("xmlFile", xmlFile);
-            response.put("environmentUsed", envUsed);
-
-            if (latestHtmlReport != null)
-                response.put("htmlReportUrl", "/scPro/reports/view/latest");
-
-            // ✅ Generate descriptive CSV report names
-            if (!csvMap.isEmpty()) {
-                List<Map<String, String>> csvLinks = new ArrayList<>();
-                csvMap.forEach((folder, path) -> {
-                    String readableName;
-                    if (folder.equalsIgnoreCase("ErrorReports")) {
-                        readableName = "Error Report - " + path.getFileName();
-                    } else if (folder.equalsIgnoreCase("PriceReports")) {
-                        readableName = "Price Report - " + path.getFileName();
-                    } else if (folder.equalsIgnoreCase("AllPriceBreakReport")) {
-                        readableName = "All Price Break Report - " + path.getFileName();
-                    } else {
-                        readableName = folder + " - " + path.getFileName();
-                    }
-
-                    csvLinks.add(Map.of(
-                            "name", readableName,
-                            "url", "/scPro/reports/csv/view/" + folder + "/" + envUsed
+            executor.execute(() -> {
+                try {
+                    Map<String, Object> result = executeTest(xmlFile, testData, queryParams);
+                    result.put("status", "completed");
+                    result.put("finishedAt", new Date().toString());
+                    RUN_STATUS.put(runId, result);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    RUN_STATUS.put(runId, Map.of(
+                            "status", "failed",
+                            "message", e.getMessage(),
+                            "finishedAt", new Date().toString()
                     ));
-                });
-                response.put("csvReports", csvLinks);
-            }
+                }
+            });
 
-            return ResponseEntity.ok(response);
+            return ResponseEntity.ok(Map.of(
+                    "status", "started",
+                    "runId", runId,
+                    "message", "Test started asynchronously",
+                    "checkStatusAt", "/scPro/status/" + runId
+            ));
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -193,9 +159,101 @@ public class TestController {
         }
     }
 
+    // ==========================================================
+    // ✅ Check Status of Async Run
+    // ==========================================================
+    @GetMapping("/status/{runId}")
+    public ResponseEntity<?> getRunStatus(@PathVariable String runId) {
+        Map<String, Object> status = RUN_STATUS.get(runId);
+        if (status == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of(
+                    "status", "error",
+                    "message", "Run ID not found: " + runId
+            ));
+        }
+        return ResponseEntity.ok(status);
+    }
 
     // ==========================================================
-    // ✅ Serve Latest ExtentReport (inline view)
+    // ✅ Actual synchronous logic for Test Execution
+    // ==========================================================
+    private Map<String, Object> executeTest(
+            String xmlFile,
+            List<Map<String, Object>> testData,
+            Map<String, String> queryParams
+    ) throws Exception {
+
+        File xmlFilePath = resolveXmlFile(xmlFile);
+        if (xmlFilePath == null || !xmlFilePath.exists()) {
+            throw new FileNotFoundException("XML file NOT found: " + xmlFile);
+        }
+
+        // Inject test data
+        if (testData != null && !testData.isEmpty()) {
+            String jsonString = new com.fasterxml.jackson.databind.ObjectMapper().writeValueAsString(testData);
+            System.setProperty("testDataJson", jsonString);
+        } else {
+            System.clearProperty("testDataJson");
+        }
+
+        // Merge configs
+        Map<String, String> mergedProps = buildEffectiveProps(queryParams);
+        Utilities.updateProperties(USER_PROPERTIES_FILE, mergedProps);
+        String envUsed = mergedProps.getOrDefault("environment", environment);
+
+        // Run TestNG Suite
+        System.out.println("🧪 Running suite: " + xmlFilePath.getAbsolutePath());
+        TestNG testng = new TestNG();
+        testng.setTestSuites(Collections.singletonList(xmlFilePath.getAbsolutePath()));
+        testng.run();
+
+        // Identify CSV folders
+        List<String> generatedCsvFolders = new ArrayList<>();
+        if (xmlFile.equalsIgnoreCase("ModulesWithPriceAndErrorReport.xml")) {
+            generatedCsvFolders = Arrays.asList("ErrorReports", "PriceReports");
+        } else if (xmlFile.equalsIgnoreCase("ApplyInternalsToModuleAndGenerateReports.xml")) {
+            generatedCsvFolders = Collections.singletonList("AllPriceBreakReport");
+        }
+
+        // Fetch reports
+        Map<String, Path> csvMap = findLatestCsvsForFolders(generatedCsvFolders, envUsed);
+        Path latestHtmlReport = getLatestExtentReport();
+
+        Map<String, Object> response = new LinkedHashMap<>();
+        response.put("message", "Test completed successfully");
+        response.put("xmlFile", xmlFile);
+        response.put("environmentUsed", envUsed);
+
+        if (latestHtmlReport != null)
+            response.put("htmlReportUrl", "/scPro/reports/view/latest");
+
+        if (!csvMap.isEmpty()) {
+            List<Map<String, String>> csvLinks = new ArrayList<>();
+            csvMap.forEach((folder, path) -> {
+                String readableName;
+                if (folder.equalsIgnoreCase("ErrorReports")) {
+                    readableName = "Error Report - " + path.getFileName();
+                } else if (folder.equalsIgnoreCase("PriceReports")) {
+                    readableName = "Price Report - " + path.getFileName();
+                } else if (folder.equalsIgnoreCase("AllPriceBreakReport")) {
+                    readableName = "All Price Break Report - " + path.getFileName();
+                } else {
+                    readableName = folder + " - " + path.getFileName();
+                }
+
+                csvLinks.add(Map.of(
+                        "name", readableName,
+                        "url", "/scPro/reports/csv/view/" + folder + "/" + envUsed
+                ));
+            });
+            response.put("csvReports", csvLinks);
+        }
+
+        return response;
+    }
+
+    // ==========================================================
+    // ✅ Serve Latest Extent Report
     // ==========================================================
     @GetMapping("/reports/view/latest")
     public ResponseEntity<Resource> viewLatestExtentReport() {
@@ -218,7 +276,7 @@ public class TestController {
     }
 
     // ==========================================================
-    // ✅ Serve Latest CSV Report (download)
+    // ✅ Serve Latest CSV Report
     // ==========================================================
     @GetMapping("/reports/csv/view/{folderType}/{env}")
     public ResponseEntity<Resource> viewLatestCsvReport(
@@ -256,16 +314,13 @@ public class TestController {
     }
 
     // ==========================================================
-    // ✅ Locate Latest Extent Report (Matches ExtentManager)
+    // ✅ Get Latest Extent Report
     // ==========================================================
     private Path getLatestExtentReport() {
         try {
             Path reportsBase = getBaseReportsDir().resolve("ExtentReports");
 
-            if (!Files.exists(reportsBase)) {
-                System.out.println("⚠️ ExtentReports folder not found: " + reportsBase);
-                return null;
-            }
+            if (!Files.exists(reportsBase)) return null;
 
             Optional<Path> latestDateFolder = Files.list(reportsBase)
                     .filter(Files::isDirectory)
@@ -277,10 +332,7 @@ public class TestController {
                     .filter(p -> p.toString().endsWith(".html"))
                     .max(Comparator.comparingLong(p -> p.toFile().lastModified()));
 
-            if (latestHtml.isEmpty()) return null;
-
-            System.out.println("✅ Latest ExtentReport found: " + latestHtml.get());
-            return latestHtml.get();
+            return latestHtml.orElse(null);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -289,32 +341,25 @@ public class TestController {
     }
 
     // ==========================================================
-    // ✅ Find latest CSVs for folders
+    // ✅ Find Latest CSV Reports
     // ==========================================================
     private Map<String, Path> findLatestCsvsForFolders(List<String> folderTypes, String env) {
         Map<String, Path> latestCsvs = new LinkedHashMap<>();
         for (String folderType : folderTypes) {
             try {
-                Path reportsDir = getBaseReportsDir().resolve(folderType).resolve(env);
+                Path reportsDir = Paths.get("reports", folderType, env);
                 String today = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
                 Path dateFolder = reportsDir.resolve(today);
-
-                if (!Files.exists(dateFolder)) continue;
-
-                Optional<Path> latestCsv = Files.list(dateFolder)
-                        .filter(f -> f.toString().endsWith(".csv"))
-                        .max(Comparator.comparingLong(f -> f.toFile().lastModified()));
-
-                latestCsv.ifPresent(path -> latestCsvs.put(folderType, path));
-
+                if (!Files.exists(dateFolder)) {
+                    System.out.println("⚠️ Folder missing: " + dateFolder);
+                    continue;
+                }
+                Optional<Path> latestCsv = Files.list(dateFolder) .filter(f -> f.toString().endsWith(".csv")) .max(Comparator.comparingLong(f -> f.toFile().lastModified()));
+                latestCsv.ifPresent(path -> { latestCsvs.put(folderType, path); System.out.println("✅ Found latest CSV for " + folderType + ": " + path); });
             } catch (Exception e) {
                 System.err.println("❌ Error reading folder: " + folderType);
-                e.printStackTrace();
-            }
-        }
-        return latestCsvs;
+                e.printStackTrace(); } } return latestCsvs;
     }
-
     // ==========================================================
     // ✅ Merge default + custom properties
     // ==========================================================
@@ -344,10 +389,9 @@ public class TestController {
     }
 
     // ==========================================================
-    // ✅ Resolve XML Suite File (Classpath / FileSystem)
+    // ✅ Resolve XML File (Classpath or Temp)
     // ==========================================================
     private File resolveXmlFile(String xmlFile) throws IOException {
-     return  Utilities.getXmlResource(xmlFile);
+        return Utilities.getXmlResource(xmlFile);
     }
-
 }

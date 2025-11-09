@@ -237,7 +237,7 @@
 
     if (projectId) props.projectID = projectId;
     if (env) props.environment = env;
-    if (custType) props.customerType=custType
+    if (custType) props.customerType = custType;
 
     const qs = new URLSearchParams(props).toString();
     const url = `${API_BASE_URL}/run?xmlFile=${selectedSuite}${qs ? "&" + qs : ""}`;
@@ -247,6 +247,7 @@
     btn.classList.add("running");
 
     try {
+      // 🚀 Start test async
       const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -254,29 +255,68 @@
       });
 
       const data = await res.json();
+      if (data.status !== "started") {
+        throw new Error(data.message || "Failed to start async test");
+      }
+
+      const runId = data.runId;
+      showMessage(`🧪 Test started (Run ID: ${runId})`, "info");
+      responseContainer.innerHTML = `<p>⏳ Test is running... please wait.</p>`;
+
+      // 🔄 Poll for completion every 5 seconds
+      const pollInterval = 5000;
+      const checkStatusUrl = `${API_BASE_URL}/status/${runId}`;
+
+      const pollStatus = async () => {
+        try {
+          const statusRes = await fetch(checkStatusUrl);
+          const statusData = await statusRes.json();
+
+          if (statusData.status === "running") {
+            responseContainer.innerHTML = `<p>⏳ Still running... started at ${statusData.startedAt}</p>`;
+            setTimeout(pollStatus, pollInterval);
+          } else if (statusData.status === "completed") {
+            btn.textContent = "Run";
+            btn.classList.remove("running");
+            responseContainer.innerHTML = "";
+            showMessage("✅ Test completed successfully!", "success");
+
+            if (statusData.htmlReportUrl) {
+              testReporter(
+                `<a href="${statusData.htmlReportUrl}" target="_blank" class="btn-report">📄 View HTML Report</a>`
+              );
+            }
+
+            if (Array.isArray(statusData.csvReports) && statusData.csvReports.length > 0) {
+              statusData.csvReports.forEach((report) => {
+                testReporter(
+                  `<a href="${report.url}" class="btn-download" download>📥 Download ${report.name}</a>`
+                );
+              });
+            }
+          } else if (statusData.status === "failed") {
+            btn.textContent = "Run";
+            btn.classList.remove("running");
+            showMessage(`❌ Test failed: ${statusData.message}`, "error");
+          } else {
+            showMessage("⚠️ Unknown status received", "error");
+          }
+        } catch (err) {
+          showMessage("❌ Error checking status: " + err.message, "error");
+          btn.textContent = "Run";
+          btn.classList.remove("running");
+        }
+      };
+
+      // Start polling
+      setTimeout(pollStatus, pollInterval);
+    } catch (err) {
       btn.textContent = "Run";
       btn.classList.remove("running");
-      responseContainer.innerHTML = "";
-
-      if (data.status === "success") {
-        showMessage("✅ Test completed successfully!", "success");
-
-        if (data.htmlReportUrl) {
-          testReporter(`<a href="${data.htmlReportUrl}" target="_blank" class="btn-report">📄 View HTML Report</a>`);
-        }
-
-        if (Array.isArray(data.csvReports) && data.csvReports.length > 0) {
-          data.csvReports.forEach((report) => {
-            testReporter(`<a href="${report.url}" class="btn-download" download>📥 Download ${report.name}</a>`);
-          });
-        }
-      } else {
-        showMessage(`❌ Test failed: ${data.message}`, "error");
-      }
-    } catch (err) {
       showMessage("❌ Error: " + err.message, "error");
     }
   }
+
 
   // ==========================================================
   // 🔹 Clear Form

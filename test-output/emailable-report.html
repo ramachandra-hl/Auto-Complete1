@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Sample Test Suite</th></tr>
+<tr><td><a href="#t0">Modules addition and Fetching Price And Error Report</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">51,132</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Modules addition and Fetching Price And Error Report &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.DefaultModulePriceAndErrorReportTest</td><td><a href="#m0">computeLatestAndUpdateToLatestProjectPriceTest</a></td><td rowspan="1">1762714560415</td><td rowspan="1">31628</td></tr><tr><th colspan="4">Modules addition and Fetching Price And Error Report &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.DefaultModulePriceAndErrorReportTest</td><td><a href="#m1">extractAllModulePriceFromProject</a></td><td rowspan="1">1762714592068</td><td rowspan="1">1360</td></tr><tr class="passedeven"><td><a href="#m2">extractAllPricingErrorsFromProject</a></td><td rowspan="1">1762714593429</td><td rowspan="1">1338</td></tr><tr class="passedodd"><td rowspan="2">test.DeleteAllRoomsInFloorTest</td><td><a href="#m3">deleteRooms</a></td><td rowspan="1">1762714544487</td><td rowspan="1">715</td></tr><tr class="passedodd"><td><a href="#m4">resetFloorPlan</a></td><td rowspan="1">1762714543801</td><td rowspan="1">661</td></tr><tr class="passedeven"><td rowspan="5">test.RoomConfigurationWithModuleAdditionTest</td><td><a href="#m5">configureRoomWithModulesAndMaterials</a></td><td rowspan="5">1762714549219</td><td rowspan="5">2742</td></tr><tr class="passedeven"><td><a href="#m6">configureRoomWithModulesAndMaterials</a></td></tr><tr class="passedeven"><td><a href="#m7">configureRoomWithModulesAndMaterials</a></td></tr><tr class="passedeven"><td><a href="#m8">configureRoomWithModulesAndMaterials</a></td></tr><tr class="passedeven"><td><a href="#m9">configureRoomWithModulesAndMaterials</a></td></tr></tbody>
+</table>
+<h2>Modules addition and Fetching Price And Error Report</h2><h3 id="m0">test.DefaultModulePriceAndErrorReportTest#computeLatestAndUpdateToLatestProjectPriceTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: {
+    &quot;errorId&quot;: &quot;8c52710e-5925-4320-87e6-c4562eace601&quot;,
+    &quot;date&quot;: &quot;2025-11-09T18:56:32.603+00:00&quot;,
+    &quot;message&quot;: &quot;No value present&quot;,
+    &quot;details&quot;: &quot;[The stacktrace has been enhanced by Reactor, refer to additional information below: \nError has been observed at the following site(s):\n\t*__checkpoint ⇢ Handler com.homelane.spacecraft.scbackend.resources.price.PriceController#currentAndOldProjectPrice(String) [DispatcherHandler]\nOriginal Stack Trace:]&quot;
+} expected [200] but found [500]
+	at services.ScBackendService.computeLatestProjectPrice(ScBackendService.java:87)
+	at test.DefaultModulePriceAndErrorReportTest.computeLatestAndUpdateToLatestProjectPriceTest(DefaultModulePriceAndErrorReportTest.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at autoqa.controller.TestController.executeTest(TestController.java:208)
+	at autoqa.controller.TestController.lambda$runTestSuiteAsync$0(TestController.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.DefaultModulePriceAndErrorReportTest#extractAllModulePriceFromProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.DefaultModulePriceAndErrorReportTest#extractAllPricingErrorsFromProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.DeleteAllRoomsInFloorTest#deleteRooms</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.DeleteAllRoomsInFloorTest#resetFloorPlan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.RoomConfigurationWithModuleAdditionTest#configureRoomWithModulesAndMaterials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{s.no=2, internalName=HW1ID2FS3RS-1S-DC, internalId=15490, width=600, depth=580, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.RoomConfigurationWithModuleAdditionTest#configureRoomWithModulesAndMaterials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{s.no=4, internalName=HW1ID2FS3RS-1S-350D-DC, internalId=15492, width=600, depth=520, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.RoomConfigurationWithModuleAdditionTest#configureRoomWithModulesAndMaterials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{s.no=1, internalName=HW2FS4RS1HR-1S-DC, internalId=15481, width=600, depth=580, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test.RoomConfigurationWithModuleAdditionTest#configureRoomWithModulesAndMaterials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{s.no=3, internalName=HW1ID2FS3RS-1S-400D-DC, internalId=15491, width=600, depth=570, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test.RoomConfigurationWithModuleAdditionTest#configureRoomWithModulesAndMaterials</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{s.no=5, internalName=HW1ID2FS3RS-1S-300D-DC, internalId=15493, width=600, depth=470, height=2400, moduleName=HW-1S-S-DC, moduleId=13732, =}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
