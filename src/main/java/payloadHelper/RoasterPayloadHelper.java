@@ -194,7 +194,7 @@ public class RoasterPayloadHelper {
         formData.put("deposit_date", Utilities.getTodayDate());
         formData.put("ref_number", "123456789");
         formData.put("service_type", "1");
-        File file = new File("Configuration/PaymentSlips/HomeLane_Luxe_Ack_Slip_773_isLuxe=1.pdf");
+        File file = new File("configuration/PaymentSlips/HomeLane_Luxe_Ack_Slip_773_isLuxe=1.pdf");
         formData.put("file_upload", file);
         return formData;
     }
