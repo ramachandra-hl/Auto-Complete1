@@ -1066,37 +1066,36 @@ public class Utilities {
     public static List<String> listXmlFilesFromClasspath(String folderPath) {
         List<String> xmlFiles = new ArrayList<>();
         try {
-            // Try to read all resources matching the folder path
             ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
             URL dirURL = classLoader.getResource(folderPath);
 
             if (dirURL != null && "file".equals(dirURL.getProtocol())) {
-                // ✅ Local run: src/main/resources/xmlFiles
+                // ✅ Running locally
                 File folder = new File(dirURL.toURI());
                 File[] files = folder.listFiles((dir, name) -> name.endsWith(".xml"));
                 if (files != null) {
-                    for (File f : files) xmlFiles.add(f.getName());
+                    for (File f : files) {
+                        xmlFiles.add(f.getName());
+                    }
                 }
             } else {
-                // ✅ Inside Spring Boot JAR (Railway)
-                String pathInJar = "BOOT-INF/classes/" + folderPath + "/";
-                try (InputStream jarStream = Utilities.class
-                        .getProtectionDomain()
-                        .getCodeSource()
-                        .getLocation()
-                        .openStream()) {
-                    try (JarInputStream jar = new JarInputStream(jarStream)) {
-                        JarEntry entry;
-                        while ((entry = jar.getNextJarEntry()) != null) {
-                            if (entry.getName().startsWith(pathInJar)
-                                    && entry.getName().endsWith(".xml")) {
-                                xmlFiles.add(entry.getName()
-                                        .substring(entry.getName().lastIndexOf('/') + 1));
-                            }
-                        }
+                // ✅ Running inside a JAR (Spring Boot / Railway)
+                String pathInJar = folderPath.endsWith("/") ? folderPath : folderPath + "/";
+                try (InputStream resourceStream = Utilities.class.getResourceAsStream("/" + pathInJar)) {
+                    // Not all ClassLoaders support folder streams — fallback to scanning via ClassPath
+                }
+
+                // Use Spring's PathMatchingResourcePatternResolver to scan all resources
+                org.springframework.core.io.support.PathMatchingResourcePatternResolver resolver =
+                        new org.springframework.core.io.support.PathMatchingResourcePatternResolver();
+                org.springframework.core.io.Resource[] resources =
+                        resolver.getResources("classpath*:" + folderPath + "/*.xml");
+
+                for (org.springframework.core.io.Resource resource : resources) {
+                    String filename = resource.getFilename();
+                    if (filename != null && filename.endsWith(".xml")) {
+                        xmlFiles.add(filename);
                     }
-                } catch (Exception inner) {
-                    log.warn("⚠️ Could not scan inside JAR, trying alternative resource listing: {}", inner.getMessage());
                 }
             }
 
