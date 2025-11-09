@@ -85,8 +85,8 @@ public class BaseClass  {
 //
 //    private static void loadCustomerConfig(String customerType) {
 //        String configFile = switch (customerType) {
-//            case "HL", "LUXE" -> "Configurations/hl_config.yml";
-//            case "HFN" -> "Configurations/hfn_config.yml";
+//            case "HL", "LUXE" -> "Configurations/HL_config.yml";
+//            case "HFN" -> "Configurations/HFN_config.yml";
 //            default -> null;
 //        };
 //        if (configFile != null) {
